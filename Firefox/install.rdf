@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+     xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+
+	<Description about="urn:mozilla:install-manifest">	
+		<em:id>fontsdownloader@fsanches.net</em:id>
+		<em:version>0.1</em:version>
+		<em:creator>Felipe Corrêa da Silva Sanches</em:creator>
+		<em:iconURL>chrome://fontsdownloader/skin/fontsdownloader-icon.png</em:iconURL>
+		<em:type>2</em:type>
+
+    <em:localized>
+      <Description>
+        <em:locale>pt-BR</em:locale>
+        <em:name>FontsDownloader</em:name>
+        <em:description>Permite a instalação local de fontes usadas em páginas da web.</em:description>
+      </Description>
+    </em:localized>
+
+    <em:localized>
+      <Description>
+        <em:locale>en-US</em:locale>
+        <em:name>FontsDownloader</em:name>
+        <em:description>Allows local instalation of fonts found in web pages.</em:description>
+      </Description>
+    </em:localized>
+
+        <!-- Firefox -->
+		<em:targetApplication>
+			<Description>
+				<em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+				<em:minVersion>3.5</em:minVersion>
+				<em:maxVersion>4.0</em:maxVersion>
+			</Description>
+		</em:targetApplication>
+
+	</Description>
+</RDF>
