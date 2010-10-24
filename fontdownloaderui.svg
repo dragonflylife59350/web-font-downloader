@@ -10,13 +10,13 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="466.15625"
-   height="413.59375"
+   width="1046.2812"
+   height="525.03125"
    id="svg2"
    version="1.1"
    inkscape:version="0.48+devel r9680 custom"
    sodipodi:docname="fontdownloaderui.svg"
-   inkscape:export-filename="/home/crossland-fedora12/fontdownloaderui.png"
+   inkscape:export-filename="/home/crossland-fedora12/Documents/Work/src/dcrossland-web-font-downloader/fontdownloaderui.png"
    inkscape:export-xdpi="72"
    inkscape:export-ydpi="72">
   <defs
@@ -719,6 +719,169 @@
          offset="1.0000000"
          id="stop1446-2-3" />
     </linearGradient>
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient1442-4-0"
+       id="radialGradient4559"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0,2.7172826,-3.288271,0,415.58728,-93.605143)"
+       cx="35.292667"
+       cy="20.494493"
+       fx="35.292667"
+       fy="20.494493"
+       r="16.9562" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient5048"
+       id="linearGradient4561"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(2.774389,0,0,1.969706,-1892.179,-872.8854)"
+       x1="302.85715"
+       y1="366.64789"
+       x2="302.85715"
+       y2="609.50507" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient5060"
+       id="radialGradient4563"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(2.774389,0,0,1.969706,-1891.633,-872.8854)"
+       cx="605.71429"
+       cy="486.64789"
+       fx="605.71429"
+       fy="486.64789"
+       r="117.14286" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient5060"
+       id="radialGradient4565"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(-2.774389,0,0,1.969706,112.7623,-872.8854)"
+       cx="605.71429"
+       cy="486.64789"
+       fx="605.71429"
+       fy="486.64789"
+       r="117.14286" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4228"
+       id="linearGradient4567"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(0,5.125)"
+       x1="7.6046205"
+       y1="28.481176"
+       x2="36.183067"
+       y2="40.943935" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4244"
+       id="radialGradient4569"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.286242,0.781698,-0.710782,1.169552,-2.354348,0.24814)"
+       cx="15.571491"
+       cy="2.958519"
+       fx="15.571491"
+       fy="2.958519"
+       r="20.935818" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4184"
+       id="linearGradient4571"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(0.795493,3.79918)"
+       x1="7.0625"
+       y1="35.28125"
+       x2="24.6875"
+       y2="35.28125" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4236"
+       id="linearGradient4573"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(0,5.125)"
+       x1="12.277412"
+       y1="37.205811"
+       x2="12.221823"
+       y2="33.758667" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4274"
+       id="linearGradient4575"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(0,5.125)"
+       x1="23.688078"
+       y1="11.318835"
+       x2="23.688078"
+       y2="26.357183" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4254"
+       id="linearGradient4577"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(0,5.125)"
+       x1="12.378357"
+       y1="4.433136"
+       x2="44.0961"
+       y2="47.620636" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient2555"
+       id="linearGradient4579"
+       gradientUnits="userSpaceOnUse"
+       x1="33.431175"
+       y1="31.964777"
+       x2="21.747974"
+       y2="11.780679" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient8662-5"
+       id="radialGradient4581"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1,0,0,0.536723,0,16.87306)"
+       cx="24.837126"
+       cy="36.421127"
+       fx="24.837126"
+       fy="36.421127"
+       r="15.644737" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient6901"
+       id="linearGradient4583"
+       gradientUnits="userSpaceOnUse"
+       x1="14.751649"
+       y1="15.868432"
+       x2="8.8953285"
+       y2="16.743431" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient6925"
+       id="linearGradient4585"
+       gradientUnits="userSpaceOnUse"
+       x1="12.25"
+       y1="18.25"
+       x2="7"
+       y2="21.118431" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient2187"
+       id="linearGradient4587"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.914114,0,0,0.914114,-3.868698,-2.706902)"
+       x1="33.059906"
+       y1="27.394117"
+       x2="12.624337"
+       y2="12.583769" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4991"
+       id="radialGradient4589"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(-1.314471,-0.01006312,-0.01022964,1.336221,46.22108,-4.909887)"
+       cx="23.447077"
+       cy="6.4576745"
+       fx="23.447077"
+       fy="6.4576745"
+       r="19.0625" />
   </defs>
   <sodipodi:namedview
      id="base"
@@ -727,11 +890,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.76531292"
-     inkscape:cx="167.2148"
-     inkscape:cy="167.77951"
+     inkscape:zoom="0.35684376"
+     inkscape:cx="1407.5436"
+     inkscape:cy="153.75115"
      inkscape:document-units="px"
-     inkscape:current-layer="layer3"
+     inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:window-width="1440"
      inkscape:window-height="825"
@@ -758,14 +921,14 @@
      inkscape:groupmode="layer"
      id="layer3"
      inkscape:label="UI"
-     transform="translate(-0.09375,0)">
+     transform="translate(168.5625,36.3125)">
     <rect
-       style="fill:#cacaca;fill-opacity:1;stroke:#2e3436;stroke-width:1.04053675999999995"
+       style="fill:#cacaca;fill-opacity:1;stroke:#2e3436;stroke-width:1.07054293"
        id="rect5046"
-       width="465.12109"
-       height="412.53326"
-       x="0.61967427"
-       y="0.53430629"
+       width="465.09109"
+       height="436.69708"
+       x="0.63467735"
+       y="0.54930937"
        inkscape:export-filename="/home/crossland-fedora12/fontdownloaderui.png"
        inkscape:export-xdpi="72.021759"
        inkscape:export-ydpi="72.021759" />
@@ -883,14 +1046,160 @@
            id="tspan4990"
            sodipodi:role="line">f</tspan></text>
     </g>
+    <rect
+       inkscape:export-ydpi="72.021759"
+       inkscape:export-xdpi="72.021759"
+       inkscape:export-filename="/home/crossland-fedora12/fontdownloaderui.png"
+       y="201.38779"
+       x="-134.58418"
+       height="240.26244"
+       width="87.427101"
+       id="rect3337"
+       style="fill:#cacaca;fill-opacity:1;stroke:#2e3436;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m -134.58419,227.32354 88.995149,0"
+       id="path3395"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <path
+       sodipodi:nodetypes="cc"
+       inkscape:connector-curvature="0"
+       id="path3397"
+       d="m -134.58419,416.05464 88.995149,0"
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <rect
+       inkscape:export-ydpi="72.021759"
+       inkscape:export-xdpi="72.021759"
+       inkscape:export-filename="/home/crossland-fedora12/fontdownloaderui.png"
+       y="284.08539"
+       x="500.91711"
+       height="159.24011"
+       width="306.59161"
+       id="rect4167"
+       style="fill:#cacaca;fill-opacity:1;stroke:#2e3436;stroke-width:0.52486944" />
+    <rect
+       inkscape:export-ydpi="72.021759"
+       inkscape:export-xdpi="72.021759"
+       inkscape:export-filename="/home/crossland-fedora12/fontdownloaderui.png"
+       style="fill:#f57900;fill-opacity:1;stroke:#ce5c00;stroke-width:0.86306494"
+       id="rect4169"
+       width="306.35422"
+       height="19.117096"
+       x="501.05588"
+       y="273.17828" />
+    <rect
+       inkscape:export-ydpi="72.021759"
+       inkscape:export-xdpi="72.021759"
+       inkscape:export-filename="/home/crossland-fedora12/fontdownloaderui.png"
+       y="276.1618"
+       x="789.508"
+       height="13.28761"
+       width="13.28761"
+       id="rect4171"
+       style="fill:#d3d7cf;fill-opacity:0.74641149" />
+    <rect
+       inkscape:export-ydpi="72.021759"
+       inkscape:export-xdpi="72.021759"
+       inkscape:export-filename="/home/crossland-fedora12/fontdownloaderui.png"
+       style="fill:#d3d7cf;fill-opacity:0.74509804"
+       id="rect4175"
+       width="13.28761"
+       height="13.28761"
+       x="773.508"
+       y="276.1618" />
+    <rect
+       inkscape:export-ydpi="72.021759"
+       inkscape:export-xdpi="72.021759"
+       inkscape:export-filename="/home/crossland-fedora12/fontdownloaderui.png"
+       y="276.1618"
+       x="757.508"
+       height="13.28761"
+       width="13.28761"
+       id="rect4177"
+       style="fill:#d3d7cf;fill-opacity:0.74641149" />
+    <rect
+       inkscape:export-ydpi="72.021759"
+       inkscape:export-xdpi="72.021759"
+       inkscape:export-filename="/home/crossland-fedora12/fontdownloaderui.png"
+       y="286.30441"
+       x="758.8443"
+       height="1.6511232"
+       width="10.692988"
+       id="rect4179"
+       style="fill:#ffffff;fill-opacity:1" />
+    <rect
+       inkscape:export-ydpi="72.021759"
+       inkscape:export-xdpi="72.021759"
+       inkscape:export-filename="/home/crossland-fedora12/fontdownloaderui.png"
+       y="277.59662"
+       x="774.94318"
+       height="10.417797"
+       width="10.417797"
+       id="rect4181"
+       style="fill:#ffffff;fill-opacity:1" />
+    <rect
+       inkscape:export-ydpi="72.021759"
+       inkscape:export-xdpi="72.021759"
+       inkscape:export-filename="/home/crossland-fedora12/fontdownloaderui.png"
+       transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,0,0)"
+       style="fill:#ffffff;fill-opacity:1"
+       id="rect4183"
+       width="5.6365213"
+       height="5.6365213"
+       x="760.20367"
+       y="-365.89206" />
+    <text
+       inkscape:export-ydpi="72.021759"
+       inkscape:export-xdpi="72.021759"
+       inkscape:export-filename="/home/crossland-fedora12/fontdownloaderui.png"
+       sodipodi:linespacing="125%"
+       id="text4185"
+       y="287.40396"
+       x="526.15125"
+       style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#eeeeec;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       xml:space="preserve"><tspan
+         y="287.40396"
+         x="526.15125"
+         id="tspan4187"
+         sodipodi:role="line">Web Font Downloader</tspan></text>
+    <g
+       inkscape:export-ydpi="72.021759"
+       inkscape:export-xdpi="72.021759"
+       inkscape:export-filename="/home/crossland-fedora12/fontdownloaderui.png"
+       transform="matrix(0.11811515,0,0,0.11811515,473.5915,287.14009)"
+       id="g4189">
+      <path
+         inkscape:connector-curvature="0"
+         style="color:#000000;fill:url(#radialGradient4559);fill-opacity:1;fill-rule:evenodd;stroke:#3a7304;stroke-width:3.22326541;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible"
+         d="m 370.74297,-80.434435 -58.03497,0.01257 0,41.875443 -25.77117,0.02514 55.26196,64.457099 54.29992,-64.459065 -25.77284,-0.01222 0.0171,-41.898973 z"
+         id="path4191" />
+      <path
+         inkscape:connector-curvature="0"
+         style="opacity:0.48128339;color:#000000;fill:none;stroke:#ffffff;stroke-width:3.22326541;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible"
+         d="m 367.51465,-77.19858 -51.57676,-0.01257 0,41.87971 -21.97238,0.05038 48.20158,56.254258 47.40303,-56.268337 -22.04681,-0.01676 -0.009,-41.886528 z"
+         id="path4193" />
+      <text
+         xml:space="preserve"
+         style="font-size:63.60544968px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#eeeeec;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         x="331.078"
+         y="-12.645993"
+         id="text4195"
+         sodipodi:linespacing="125%"><tspan
+           sodipodi:role="line"
+           id="tspan4197"
+           x="331.078"
+           y="-12.645993"
+           style="font-size:76.3430481px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#eeeeec;font-family:MgOpen Canonica;-inkscape-font-specification:MgOpen Canonica">f</tspan></text>
+    </g>
   </g>
   <g
      inkscape:label="Table"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-33.875,-82.25)">
+     transform="translate(134.78125,-45.9375)">
     <rect
-       y="106.50708"
+       y="142.50708"
        x="37.24733"
        height="17.133772"
        width="458.88712"
@@ -905,12 +1214,12 @@
        width="458.88712"
        height="17.133772"
        x="37.24733"
-       y="126.50708"
+       y="162.50708"
        inkscape:export-filename="/home/crossland-fedora12/fontdownloaderui.png"
        inkscape:export-xdpi="72.021759"
        inkscape:export-ydpi="72.021759" />
     <rect
-       y="143.64084"
+       y="179.64084"
        x="37.24733"
        height="17.133772"
        width="458.88712"
@@ -925,12 +1234,12 @@
        width="458.88712"
        height="17.133772"
        x="37.24733"
-       y="160.77463"
+       y="196.77463"
        inkscape:export-filename="/home/crossland-fedora12/fontdownloaderui.png"
        inkscape:export-xdpi="72.021759"
        inkscape:export-ydpi="72.021759" />
     <rect
-       y="177.9084"
+       y="213.9084"
        x="37.24733"
        height="17.133772"
        width="458.88712"
@@ -945,12 +1254,12 @@
        width="458.88712"
        height="17.133772"
        x="37.24733"
-       y="195.04218"
+       y="231.04218"
        inkscape:export-filename="/home/crossland-fedora12/fontdownloaderui.png"
        inkscape:export-xdpi="72.021759"
        inkscape:export-ydpi="72.021759" />
     <rect
-       y="212.17593"
+       y="248.17593"
        x="37.24733"
        height="17.133772"
        width="458.88712"
@@ -965,12 +1274,12 @@
        width="458.88712"
        height="17.133772"
        x="37.24733"
-       y="229.30971"
+       y="265.30969"
        inkscape:export-filename="/home/crossland-fedora12/fontdownloaderui.png"
        inkscape:export-xdpi="72.021759"
        inkscape:export-ydpi="72.021759" />
     <rect
-       y="246.44348"
+       y="282.44348"
        x="37.24733"
        height="17.133772"
        width="458.88712"
@@ -985,12 +1294,12 @@
        width="458.88712"
        height="17.133772"
        x="37.24733"
-       y="263.57727"
+       y="299.57727"
        inkscape:export-filename="/home/crossland-fedora12/fontdownloaderui.png"
        inkscape:export-xdpi="72.021759"
        inkscape:export-ydpi="72.021759" />
     <rect
-       y="280.71103"
+       y="316.71103"
        x="37.24733"
        height="17.133772"
        width="458.88712"
@@ -1005,7 +1314,7 @@
        width="458.88712"
        height="17.133772"
        x="37.24733"
-       y="297.84479"
+       y="333.84479"
        inkscape:export-filename="/home/crossland-fedora12/fontdownloaderui.png"
        inkscape:export-xdpi="72.021759"
        inkscape:export-ydpi="72.021759" />
@@ -1027,28 +1336,28 @@
       <text
          sodipodi:linespacing="125%"
          id="text3472"
-         y="139.34213"
+         y="175.34213"
          x="407.47479"
          style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
          xml:space="preserve"
          inkscape:export-filename="/home/crossland-fedora12/fontdownloaderui.png"
          inkscape:export-xdpi="72.021759"
          inkscape:export-ydpi="72.021759"><tspan
-           y="139.34213"
+           y="175.34213"
            x="407.47479"
            id="tspan3474"
            sodipodi:role="line">Cantarell-Regular</tspan></text>
       <text
          sodipodi:linespacing="125%"
          id="text3688"
-         y="119.27472"
+         y="155.27472"
          x="405.7041"
          style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
          xml:space="preserve"
          inkscape:export-filename="/home/crossland-fedora12/fontdownloaderui.png"
          inkscape:export-xdpi="72.021759"
          inkscape:export-ydpi="72.021759"><tspan
-           y="119.27472"
+           y="155.27472"
            x="405.7041"
            id="tspan3690"
            sodipodi:role="line">PostScript Name</tspan></text>
@@ -1056,7 +1365,7 @@
          xml:space="preserve"
          style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
          x="407.47479"
-         y="157.02605"
+         y="193.02605"
          id="text3692"
          sodipodi:linespacing="125%"
          inkscape:export-filename="/home/crossland-fedora12/fontdownloaderui.png"
@@ -1065,18 +1374,18 @@
            sodipodi:role="line"
            id="tspan3694"
            x="407.47479"
-           y="157.02605">Andika-Italic</tspan></text>
+           y="193.02605">Andika-Italic</tspan></text>
       <text
          sodipodi:linespacing="125%"
          id="text3696"
-         y="173.5295"
+         y="209.5295"
          x="407.47479"
          style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
          xml:space="preserve"
          inkscape:export-filename="/home/crossland-fedora12/fontdownloaderui.png"
          inkscape:export-xdpi="72.021759"
          inkscape:export-ydpi="72.021759"><tspan
-           y="173.5295"
+           y="209.5295"
            x="407.47479"
            id="tspan3698"
            sodipodi:role="line">Gentium-Regular</tspan></text>
@@ -1084,7 +1393,7 @@
          xml:space="preserve"
          style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
          x="407.47479"
-         y="191.21339"
+         y="227.21339"
          id="text3700"
          sodipodi:linespacing="125%"
          inkscape:export-filename="/home/crossland-fedora12/fontdownloaderui.png"
@@ -1093,102 +1402,102 @@
            sodipodi:role="line"
            id="tspan3702"
            x="407.47479"
-           y="191.21339">Raleway-Bold</tspan></text>
+           y="227.21339">Raleway-Bold</tspan></text>
       <text
          sodipodi:linespacing="125%"
          id="text3704"
-         y="208.30707"
+         y="244.30707"
          x="408.2251"
          style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
          xml:space="preserve"
          inkscape:export-filename="/home/crossland-fedora12/fontdownloaderui.png"
          inkscape:export-xdpi="72.021759"
          inkscape:export-ydpi="72.021759"><tspan
-           y="208.30707"
+           y="244.30707"
            x="408.2251"
            id="tspan3706"
            sodipodi:role="line">Blackout</tspan></text>
       <text
          sodipodi:linespacing="125%"
          id="text3708"
-         y="225.40074"
+         y="261.40076"
          x="407.7417"
          style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
          xml:space="preserve"
          inkscape:export-filename="/home/crossland-fedora12/fontdownloaderui.png"
          inkscape:export-xdpi="72.021759"
          inkscape:export-ydpi="72.021759"><tspan
-           y="225.40074"
+           y="261.40076"
            x="407.7417"
            id="tspan3710"
            sodipodi:role="line">Chunk</tspan></text>
       <text
          sodipodi:linespacing="125%"
          id="text3712"
-         y="242.49451"
+         y="278.49451"
          x="407.32178"
          style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
          xml:space="preserve"
          inkscape:export-filename="/home/crossland-fedora12/fontdownloaderui.png"
          inkscape:export-xdpi="72.021759"
          inkscape:export-ydpi="72.021759"><tspan
-           y="242.49451"
+           y="278.49451"
            x="407.32178"
            id="tspan3714"
            sodipodi:role="line">League Gothic</tspan></text>
       <text
          sodipodi:linespacing="125%"
          id="text3716"
-         y="259.12946"
+         y="295.12946"
          x="407.32178"
          style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
          xml:space="preserve"
          inkscape:export-filename="/home/crossland-fedora12/fontdownloaderui.png"
          inkscape:export-xdpi="72.021759"
          inkscape:export-ydpi="72.021759"><tspan
-           y="259.12946"
+           y="295.12946"
            x="407.32178"
            id="tspan3718"
            sodipodi:role="line">Brasil</tspan></text>
       <text
          sodipodi:linespacing="125%"
          id="text3720"
-         y="276.81335"
+         y="312.81335"
          x="407.32178"
          style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
          xml:space="preserve"
          inkscape:export-filename="/home/crossland-fedora12/fontdownloaderui.png"
          inkscape:export-xdpi="72.021759"
          inkscape:export-ydpi="72.021759"><tspan
-           y="276.81335"
+           y="312.81335"
            x="407.32178"
            id="tspan3722"
            sodipodi:role="line">Brasil</tspan></text>
       <text
          sodipodi:linespacing="125%"
          id="text3724"
-         y="293.90704"
+         y="329.90704"
          x="408.2251"
          style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
          xml:space="preserve"
          inkscape:export-filename="/home/crossland-fedora12/fontdownloaderui.png"
          inkscape:export-xdpi="72.021759"
          inkscape:export-ydpi="72.021759"><tspan
-           y="293.90704"
+           y="329.90704"
            x="408.2251"
            id="tspan3726"
            sodipodi:role="line">Brasil</tspan></text>
       <text
          sodipodi:linespacing="125%"
          id="text3728"
-         y="310.18115"
+         y="346.18115"
          x="407.32178"
          style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
          xml:space="preserve"
          inkscape:export-filename="/home/crossland-fedora12/fontdownloaderui.png"
          inkscape:export-xdpi="72.021759"
          inkscape:export-ydpi="72.021759"><tspan
-           y="310.18115"
+           y="346.18115"
            x="407.32178"
            id="tspan3730"
            sodipodi:role="line">Brasil</tspan></text>
@@ -1201,7 +1510,7 @@
          xml:space="preserve"
          style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
          x="131.21783"
-         y="138.55603"
+         y="174.55603"
          id="text3424"
          sodipodi:linespacing="125%"
          inkscape:export-filename="/home/crossland-fedora12/fontdownloaderui.png"
@@ -1210,32 +1519,32 @@
            sodipodi:role="line"
            id="tspan3426"
            x="131.21783"
-           y="138.55603">www.someweb.com/css/cantarell.ttf</tspan></text>
+           y="174.55603">www.someweb.com/css/cantarell.ttf</tspan></text>
       <text
          sodipodi:linespacing="125%"
          id="text3428"
-         y="156.23991"
+         y="192.23991"
          x="131.21783"
          style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
          xml:space="preserve"
          inkscape:export-filename="/home/crossland-fedora12/fontdownloaderui.png"
          inkscape:export-xdpi="72.021759"
          inkscape:export-ydpi="72.021759"><tspan
-           y="156.23991"
+           y="192.23991"
            x="131.21783"
            id="tspan3430"
            sodipodi:role="line">www.someweb.com/css/andika.woff</tspan></text>
       <text
          sodipodi:linespacing="125%"
          id="text3432"
-         y="172.74336"
+         y="208.74336"
          x="130.0374"
          style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
          xml:space="preserve"
          inkscape:export-filename="/home/crossland-fedora12/fontdownloaderui.png"
          inkscape:export-xdpi="72.021759"
          inkscape:export-ydpi="72.021759"><tspan
-           y="172.74336"
+           y="208.74336"
            x="130.0374"
            id="tspan3434"
            sodipodi:role="line">www.someotherweb.com/some/other/dir...</tspan></text>
@@ -1243,7 +1552,7 @@
          xml:space="preserve"
          style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
          x="130.0374"
-         y="207.52094"
+         y="243.52094"
          id="text3440"
          sodipodi:linespacing="125%"
          inkscape:export-filename="/home/crossland-fedora12/fontdownloaderui.png"
@@ -1252,18 +1561,18 @@
            sodipodi:role="line"
            id="tspan3442"
            x="130.0374"
-           y="207.52094">www.someotherweb.com/some/other/dir...</tspan></text>
+           y="243.52094">www.someotherweb.com/some/other/dir...</tspan></text>
       <text
          sodipodi:linespacing="125%"
          id="text3444"
-         y="190.42726"
+         y="226.42726"
          x="130.0374"
          style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
          xml:space="preserve"
          inkscape:export-filename="/home/crossland-fedora12/fontdownloaderui.png"
          inkscape:export-xdpi="72.021759"
          inkscape:export-ydpi="72.021759"><tspan
-           y="190.42726"
+           y="226.42726"
            x="130.0374"
            id="tspan3446"
            sodipodi:role="line">www.someotherweb.com/some/other/dir...</tspan></text>
@@ -1271,7 +1580,7 @@
          xml:space="preserve"
          style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
          x="130.0374"
-         y="224.61461"
+         y="260.61462"
          id="text3448"
          sodipodi:linespacing="125%"
          inkscape:export-filename="/home/crossland-fedora12/fontdownloaderui.png"
@@ -1280,18 +1589,18 @@
            sodipodi:role="line"
            id="tspan3450"
            x="130.0374"
-           y="224.61461">www.someotherweb.com/some/other/dir...</tspan></text>
+           y="260.61462">www.someotherweb.com/some/other/dir...</tspan></text>
       <text
          sodipodi:linespacing="125%"
          id="text3452"
-         y="258.34332"
+         y="294.34332"
          x="130.0374"
          style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
          xml:space="preserve"
          inkscape:export-filename="/home/crossland-fedora12/fontdownloaderui.png"
          inkscape:export-xdpi="72.021759"
          inkscape:export-ydpi="72.021759"><tspan
-           y="258.34332"
+           y="294.34332"
            x="130.0374"
            id="tspan3454"
            sodipodi:role="line">www.someotherweb.com/some/other/dir...</tspan></text>
@@ -1299,7 +1608,7 @@
          xml:space="preserve"
          style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
          x="130.0374"
-         y="241.70837"
+         y="277.70837"
          id="text3456"
          sodipodi:linespacing="125%"
          inkscape:export-filename="/home/crossland-fedora12/fontdownloaderui.png"
@@ -1308,18 +1617,18 @@
            sodipodi:role="line"
            id="tspan3458"
            x="130.0374"
-           y="241.70837">www.someotherweb.com/some/other/dir...</tspan></text>
+           y="277.70837">www.someotherweb.com/some/other/dir...</tspan></text>
       <text
          sodipodi:linespacing="125%"
          id="text3460"
-         y="276.02722"
+         y="312.02722"
          x="130.0374"
          style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
          xml:space="preserve"
          inkscape:export-filename="/home/crossland-fedora12/fontdownloaderui.png"
          inkscape:export-xdpi="72.021759"
          inkscape:export-ydpi="72.021759"><tspan
-           y="276.02722"
+           y="312.02722"
            x="130.0374"
            id="tspan3462"
            sodipodi:role="line">www.someotherweb.com/some/other/dir...</tspan></text>
@@ -1327,7 +1636,7 @@
          xml:space="preserve"
          style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
          x="130.0374"
-         y="309.39502"
+         y="345.39502"
          id="text3464"
          sodipodi:linespacing="125%"
          inkscape:export-filename="/home/crossland-fedora12/fontdownloaderui.png"
@@ -1336,18 +1645,18 @@
            sodipodi:role="line"
            id="tspan3466"
            x="130.0374"
-           y="309.39502">www.someotherweb.com/some/other/dir...</tspan></text>
+           y="345.39502">www.someotherweb.com/some/other/dir...</tspan></text>
       <text
          sodipodi:linespacing="125%"
          id="text3468"
-         y="293.12091"
+         y="329.12091"
          x="130.0374"
          style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
          xml:space="preserve"
          inkscape:export-filename="/home/crossland-fedora12/fontdownloaderui.png"
          inkscape:export-xdpi="72.021759"
          inkscape:export-ydpi="72.021759"><tspan
-           y="293.12091"
+           y="329.12091"
            x="130.0374"
            id="tspan3470"
            sodipodi:role="line">www.someotherweb.com/some/other/dir...</tspan></text>
@@ -1355,7 +1664,7 @@
          xml:space="preserve"
          style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
          x="130.76971"
-         y="118.48859"
+         y="154.48859"
          id="text3480"
          sodipodi:linespacing="125%"
          inkscape:export-filename="/home/crossland-fedora12/fontdownloaderui.png"
@@ -1364,8 +1673,18 @@
            sodipodi:role="line"
            id="tspan3482"
            x="130.76971"
-           y="118.48859">URL</tspan></text>
+           y="154.48859">URL</tspan></text>
     </g>
+    <rect
+       inkscape:export-ydpi="72.021759"
+       inkscape:export-xdpi="72.021759"
+       inkscape:export-filename="/home/crossland-fedora12/fontdownloaderui.png"
+       style="fill:#ffffff;fill-opacity:1"
+       id="rect4203"
+       width="248.09758"
+       height="17.133772"
+       x="552.15295"
+       y="402.36389" />
     <g
        inkscape:groupmode="layer"
        id="layer7"
@@ -1374,7 +1693,7 @@
          xml:space="preserve"
          style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
          x="57.664921"
-         y="138.55603"
+         y="174.55603"
          id="text3007"
          sodipodi:linespacing="125%"
          inkscape:export-filename="/home/crossland-fedora12/fontdownloaderui.png"
@@ -1383,13 +1702,13 @@
            sodipodi:role="line"
            id="tspan3009"
            x="57.664921"
-           y="138.55603"
+           y="174.55603"
            style="font-size:10px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Cantarell;-inkscape-font-specification:Cantarell Medium">CntrlReg101</tspan></text>
       <text
          xml:space="preserve"
          style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
          x="58.148319"
-         y="156.23991"
+         y="192.23991"
          id="text3011"
          sodipodi:linespacing="125%"
          inkscape:export-filename="/home/crossland-fedora12/fontdownloaderui.png"
@@ -1398,13 +1717,13 @@
            sodipodi:role="line"
            id="tspan3013"
            x="58.148319"
-           y="156.23991"
+           y="192.23991"
            style="font-size:10px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Andika Basic;-inkscape-font-specification:Andika Basic Italic">AndikaItalic</tspan></text>
       <text
          xml:space="preserve"
          style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Gentium;-inkscape-font-specification:Gentium"
          x="57.664921"
-         y="172.74336"
+         y="208.74336"
          id="text3015"
          sodipodi:linespacing="125%"
          inkscape:export-filename="/home/crossland-fedora12/fontdownloaderui.png"
@@ -1413,13 +1732,13 @@
            sodipodi:role="line"
            id="tspan3017"
            x="57.664921"
-           y="172.74336"
+           y="208.74336"
            style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Gentium;-inkscape-font-specification:Gentium">Gentium</tspan></text>
       <text
          xml:space="preserve"
          style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
          x="57.244999"
-         y="190.42726"
+         y="226.42726"
          id="text3019"
          sodipodi:linespacing="125%"
          inkscape:export-filename="/home/crossland-fedora12/fontdownloaderui.png"
@@ -1428,13 +1747,13 @@
            sodipodi:role="line"
            id="tspan3021"
            x="57.244999"
-           y="190.42726"
+           y="226.42726"
            style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Raleway Bold;-inkscape-font-specification:'Raleway Bold, Bold'">Raleway</tspan></text>
       <text
          xml:space="preserve"
          style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Blackout;-inkscape-font-specification:Blackout"
          x="58.148319"
-         y="207.52094"
+         y="243.52094"
          id="text3023"
          sodipodi:linespacing="125%"
          inkscape:export-filename="/home/crossland-fedora12/fontdownloaderui.png"
@@ -1443,13 +1762,13 @@
            sodipodi:role="line"
            id="tspan3025"
            x="58.148319"
-           y="207.52094"
+           y="243.52094"
            style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Blackout;-inkscape-font-specification:Blackout">Blackout</tspan></text>
       <text
          xml:space="preserve"
          style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
          x="57.244999"
-         y="258.34332"
+         y="294.34332"
          id="text3027"
          sodipodi:linespacing="125%"
          inkscape:export-filename="/home/crossland-fedora12/fontdownloaderui.png"
@@ -1458,13 +1777,13 @@
            sodipodi:role="line"
            id="tspan3029"
            x="57.244999"
-           y="258.34332"
+           y="294.34332"
            style="font-size:12px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Century Schoolbook L;-inkscape-font-specification:Century Schoolbook L Italic">Brasil</tspan></text>
       <text
          xml:space="preserve"
          style="font-size:12px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Century Schoolbook L;-inkscape-font-specification:Century Schoolbook L Italic"
          x="57.244999"
-         y="276.02722"
+         y="312.02722"
          id="text3031"
          sodipodi:linespacing="125%"
          inkscape:export-filename="/home/crossland-fedora12/fontdownloaderui.png"
@@ -1473,12 +1792,12 @@
            sodipodi:role="line"
            id="tspan3033"
            x="57.244999"
-           y="276.02722">Brasil</tspan></text>
+           y="312.02722">Brasil</tspan></text>
       <text
          xml:space="preserve"
          style="font-size:12px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Century Schoolbook L;-inkscape-font-specification:Century Schoolbook L Italic"
          x="58.148319"
-         y="293.12091"
+         y="329.12091"
          id="text3035"
          sodipodi:linespacing="125%"
          inkscape:export-filename="/home/crossland-fedora12/fontdownloaderui.png"
@@ -1487,12 +1806,12 @@
            sodipodi:role="line"
            id="tspan3037"
            x="58.148319"
-           y="293.12091">Brasil</tspan></text>
+           y="329.12091">Brasil</tspan></text>
       <text
          xml:space="preserve"
          style="font-size:12px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Century Schoolbook L;-inkscape-font-specification:Century Schoolbook L Italic"
          x="57.244999"
-         y="309.39502"
+         y="345.39502"
          id="text3039"
          sodipodi:linespacing="125%"
          inkscape:export-filename="/home/crossland-fedora12/fontdownloaderui.png"
@@ -1501,12 +1820,12 @@
            sodipodi:role="line"
            id="tspan3041"
            x="57.244999"
-           y="309.39502">Brasil</tspan></text>
+           y="345.39502">Brasil</tspan></text>
       <text
          xml:space="preserve"
          style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
          x="57.664921"
-         y="224.61461"
+         y="260.61462"
          id="text3043"
          sodipodi:linespacing="125%"
          inkscape:export-filename="/home/crossland-fedora12/fontdownloaderui.png"
@@ -1515,13 +1834,13 @@
            sodipodi:role="line"
            id="tspan3045"
            x="57.664921"
-           y="224.61461"
+           y="260.61462"
            style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:ChunkFive;-inkscape-font-specification:ChunkFive">Chunk</tspan></text>
       <text
          xml:space="preserve"
          style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
          x="57.244999"
-         y="242.60162"
+         y="278.60162"
          id="text3047"
          sodipodi:linespacing="125%"
          inkscape:export-filename="/home/crossland-fedora12/fontdownloaderui.png"
@@ -1530,19 +1849,19 @@
            sodipodi:role="line"
            id="tspan3049"
            x="57.244999"
-           y="242.60162"
+           y="278.60162"
            style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:League Gothic;-inkscape-font-specification:League Gothic">League Gothic</tspan></text>
       <text
          sodipodi:linespacing="125%"
          id="text3476"
-         y="118.48859"
+         y="154.48859"
          x="57.664921"
          style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
          xml:space="preserve"
          inkscape:export-filename="/home/crossland-fedora12/fontdownloaderui.png"
          inkscape:export-xdpi="72.021759"
          inkscape:export-ydpi="72.021759"><tspan
-           y="118.48859"
+           y="154.48859"
            x="57.664921"
            id="tspan3478"
            sodipodi:role="line">CSS Name</tspan></text>
@@ -1550,7 +1869,7 @@
          xml:space="preserve"
          style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
          x="51.01543"
-         y="462.24069"
+         y="118.24069"
          id="text5859"
          sodipodi:linespacing="125%"
          inkscape:export-filename="/home/crossland-fedora12/fontdownloaderui.png"
@@ -1559,10 +1878,10 @@
            sodipodi:role="line"
            id="tspan5861"
            x="51.01543"
-           y="462.24069">Select fonts to download using the checkbox on the left, </tspan><tspan
+           y="118.24069">Select fonts to download using the checkbox on the left, </tspan><tspan
            sodipodi:role="line"
            x="51.01543"
-           y="474.74069"
+           y="130.74069"
            id="tspan5955">then click Download. </tspan></text>
       <rect
          style="fill:#ffffff;fill-opacity:1;stroke:#888a85;stroke-width:1.15076089"
@@ -1570,9 +1889,9 @@
          width="52.637375"
          height="20.234238"
          x="430.48898"
-         y="318.92166" />
+         y="354.92166" />
       <rect
-         y="318.92911"
+         y="354.92911"
          x="474.71014"
          height="10.596711"
          width="8.4087353"
@@ -1584,29 +1903,29 @@
          width="8.4249735"
          height="10.235592"
          x="474.70203"
-         y="328.92096" />
+         y="364.92096" />
       <path
          style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         d="m 476.26394,326.41018 2.38993,-5.15722 2.83019,5.3459"
+         d="m 476.26394,362.41018 2.38993,-5.15722 2.83019,5.3459"
          id="path5931"
          inkscape:connector-curvature="0" />
       <path
          inkscape:connector-curvature="0"
          id="path5933"
-         d="m 476.57841,331.31583 2.38993,5.15722 2.83018,-5.3459"
+         d="m 476.57841,367.31583 2.38993,5.15722 2.83018,-5.3459"
          style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
       <text
          sodipodi:linespacing="125%"
          id="text5935"
-         y="333.83749"
+         y="369.83749"
          x="437.4628"
-         style="font-size:12px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans;font-stretch:normal;font-variant:normal;text-anchor:start;text-align:start;writing-mode:lr"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
          xml:space="preserve"
          inkscape:export-filename="/home/crossland-fedora12/fontdownloaderui.png"
          inkscape:export-xdpi="72.021759"
          inkscape:export-ydpi="72.021759"><tspan
-           style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr;text-anchor:start;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
-           y="333.83749"
+           style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+           y="369.83749"
            x="437.4628"
            id="tspan5937"
            sodipodi:role="line">72pt</tspan></text>
@@ -1616,44 +1935,335 @@
          inkscape:export-filename="/home/crossland-fedora12/fontdownloaderui.png"
          sodipodi:linespacing="125%"
          id="text5966"
-         y="332.0383"
+         y="368.0383"
          x="50.303879"
          style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
          xml:space="preserve"><tspan
            id="tspan5970"
-           y="332.0383"
+           y="368.0383"
            x="50.303879"
            sodipodi:role="line">Type preview text into the box below:</tspan></text>
       <flowRoot
          xml:space="preserve"
          id="flowRoot5974"
-         style="fill:black;stroke:none;stroke-opacity:1;stroke-width:1px;stroke-linejoin:miter;stroke-linecap:butt;fill-opacity:1;font-family:Bitstream Vera Sans;font-style:normal;font-weight:normal;font-size:10px;line-height:125%;letter-spacing:0px;word-spacing:0px"><flowRegion
+         style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"><flowRegion
            id="flowRegion5976"><rect
              id="rect5978"
              width="16.100592"
              height="12.075443"
              x="16.100592"
              y="374.34857" /></flowRegion><flowPara
-           id="flowPara5980"></flowPara></flowRoot>      <text
+           id="flowPara5980" /></flowRoot>      <text
          inkscape:export-ydpi="72.021759"
          inkscape:export-xdpi="72.021759"
          inkscape:export-filename="/home/crossland-fedora12/fontdownloaderui.png"
          sodipodi:linespacing="125%"
          id="text5984"
-         y="474.8176"
+         y="130.8176"
          x="157.59233"
          style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#0500ff;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
          xml:space="preserve"><tspan
            id="tspan5988"
-           y="474.8176"
+           y="130.8176"
            x="157.59233"
            sodipodi:role="line"> Learn more...</tspan></text>
       <path
-         style="fill:#000000;stroke:#0500ff;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
-         d="m 127.85084,396.26979 64.67613,0"
+         style="fill:#000000;fill-opacity:1;stroke:#0500ff;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 161.72584,134.51979 64.67613,0"
          id="path5992"
+         inkscape:connector-curvature="0" />
+      <text
+         xml:space="preserve"
+         style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#0500ff;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         x="43.881397"
+         y="496.14423"
+         id="text3331"
+         sodipodi:linespacing="125%"
+         inkscape:export-filename="/home/crossland-fedora12/fontdownloaderui.png"
+         inkscape:export-xdpi="72.021759"
+         inkscape:export-ydpi="72.021759"><tspan
+           sodipodi:role="line"
+           x="43.881397"
+           y="496.14423"
+           id="tspan3333">  Configure...</tspan></text>
+      <path
          inkscape:connector-curvature="0"
-         transform="translate(33.875,82.25)" />
+         id="path3335"
+         d="m 48.014904,499.84641 64.676126,0"
+         style="fill:#000000;fill-opacity:1;stroke:#0500ff;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <text
+         inkscape:export-ydpi="72.021759"
+         inkscape:export-xdpi="72.021759"
+         inkscape:export-filename="/home/crossland-fedora12/fontdownloaderui.png"
+         sodipodi:linespacing="125%"
+         id="text3339"
+         y="320.01965"
+         x="-92.212318"
+         style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         xml:space="preserve"><tspan
+           style="font-size:10px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Cantarell;-inkscape-font-specification:Cantarell Medium"
+           y="320.01965"
+           x="-92.212318"
+           id="tspan3341"
+           sodipodi:role="line">CntrlReg101</tspan></text>
+      <text
+         inkscape:export-ydpi="72.021759"
+         inkscape:export-xdpi="72.021759"
+         inkscape:export-filename="/home/crossland-fedora12/fontdownloaderui.png"
+         sodipodi:linespacing="125%"
+         id="text3343"
+         y="337.70355"
+         x="-91.797279"
+         style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         xml:space="preserve"><tspan
+           style="font-size:10px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Andika Basic;-inkscape-font-specification:Andika Basic Italic"
+           y="337.70355"
+           x="-91.797279"
+           id="tspan3345"
+           sodipodi:role="line">AndikaItalic</tspan></text>
+      <text
+         inkscape:export-ydpi="72.021759"
+         inkscape:export-xdpi="72.021759"
+         inkscape:export-filename="/home/crossland-fedora12/fontdownloaderui.png"
+         sodipodi:linespacing="125%"
+         id="text3347"
+         y="354.207"
+         x="-92.012123"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Gentium;-inkscape-font-specification:Gentium"
+         xml:space="preserve"><tspan
+           style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Gentium;-inkscape-font-specification:Gentium"
+           y="354.207"
+           x="-92.012123"
+           id="tspan3349"
+           sodipodi:role="line">Gentium</tspan></text>
+      <text
+         inkscape:export-ydpi="72.021759"
+         inkscape:export-xdpi="72.021759"
+         inkscape:export-filename="/home/crossland-fedora12/fontdownloaderui.png"
+         sodipodi:linespacing="125%"
+         id="text3351"
+         y="371.8909"
+         x="-92.39196"
+         style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         xml:space="preserve"><tspan
+           style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Raleway Bold;-inkscape-font-specification:'Raleway Bold, Bold'"
+           y="371.8909"
+           x="-92.39196"
+           id="tspan3353"
+           sodipodi:role="line">Raleway</tspan></text>
+      <text
+         inkscape:export-ydpi="72.021759"
+         inkscape:export-xdpi="72.021759"
+         inkscape:export-filename="/home/crossland-fedora12/fontdownloaderui.png"
+         sodipodi:linespacing="125%"
+         id="text3355"
+         y="388.98456"
+         x="-91.529961"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Blackout;-inkscape-font-specification:Blackout"
+         xml:space="preserve"><tspan
+           style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Blackout;-inkscape-font-specification:Blackout"
+           y="388.98456"
+           x="-91.529961"
+           id="tspan3357"
+           sodipodi:role="line">Blackout</tspan></text>
+      <text
+         inkscape:export-ydpi="72.021759"
+         inkscape:export-xdpi="72.021759"
+         inkscape:export-filename="/home/crossland-fedora12/fontdownloaderui.png"
+         sodipodi:linespacing="125%"
+         id="text3359"
+         y="439.80695"
+         x="-91.229958"
+         style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         xml:space="preserve"><tspan
+           style="font-size:12px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Century Schoolbook L;-inkscape-font-specification:Century Schoolbook L Italic"
+           y="439.80695"
+           x="-91.229958"
+           id="tspan3361"
+           sodipodi:role="line">Brasil</tspan></text>
+      <text
+         inkscape:export-ydpi="72.021759"
+         inkscape:export-xdpi="72.021759"
+         inkscape:export-filename="/home/crossland-fedora12/fontdownloaderui.png"
+         sodipodi:linespacing="125%"
+         id="text3363"
+         y="457.49084"
+         x="-91.229958"
+         style="font-size:12px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Century Schoolbook L;-inkscape-font-specification:Century Schoolbook L Italic"
+         xml:space="preserve"><tspan
+           y="457.49084"
+           x="-91.229958"
+           id="tspan3365"
+           sodipodi:role="line">Brasil</tspan></text>
+      <text
+         inkscape:export-ydpi="72.021759"
+         inkscape:export-xdpi="72.021759"
+         inkscape:export-filename="/home/crossland-fedora12/fontdownloaderui.png"
+         sodipodi:linespacing="125%"
+         id="text3367"
+         y="474.58453"
+         x="-91.229958"
+         style="font-size:12px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Century Schoolbook L;-inkscape-font-specification:Century Schoolbook L Italic"
+         xml:space="preserve"><tspan
+           y="474.58453"
+           x="-91.229958"
+           id="tspan3369"
+           sodipodi:role="line">Brasil</tspan></text>
+      <text
+         inkscape:export-ydpi="72.021759"
+         inkscape:export-xdpi="72.021759"
+         inkscape:export-filename="/home/crossland-fedora12/fontdownloaderui.png"
+         sodipodi:linespacing="125%"
+         id="text3371"
+         y="490.85864"
+         x="-91.229958"
+         style="font-size:12px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Century Schoolbook L;-inkscape-font-specification:Century Schoolbook L Italic"
+         xml:space="preserve"><tspan
+           y="490.85864"
+           x="-91.229958"
+           id="tspan3373"
+           sodipodi:role="line">Brasil</tspan></text>
+      <text
+         inkscape:export-ydpi="72.021759"
+         inkscape:export-xdpi="72.021759"
+         inkscape:export-filename="/home/crossland-fedora12/fontdownloaderui.png"
+         sodipodi:linespacing="125%"
+         id="text3375"
+         y="406.07825"
+         x="-91.751961"
+         style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         xml:space="preserve"><tspan
+           style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:ChunkFive;-inkscape-font-specification:ChunkFive"
+           y="406.07825"
+           x="-91.751961"
+           id="tspan3377"
+           sodipodi:role="line">Chunk</tspan></text>
+      <text
+         inkscape:export-ydpi="72.021759"
+         inkscape:export-xdpi="72.021759"
+         inkscape:export-filename="/home/crossland-fedora12/fontdownloaderui.png"
+         sodipodi:linespacing="125%"
+         id="text3379"
+         y="424.06525"
+         x="-92.161964"
+         style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         xml:space="preserve"><tspan
+           style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:League Gothic;-inkscape-font-specification:League Gothic"
+           y="424.06525"
+           x="-92.161964"
+           id="tspan3381"
+           sodipodi:role="line">League Gothic</tspan></text>
+      <text
+         inkscape:export-ydpi="72.021759"
+         inkscape:export-xdpi="72.021759"
+         inkscape:export-filename="/home/crossland-fedora12/fontdownloaderui.png"
+         xml:space="preserve"
+         style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#0500ff;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         x="-92.583412"
+         y="299.95221"
+         id="text3383"
+         sodipodi:linespacing="125%"><tspan
+           sodipodi:role="line"
+           id="tspan3385"
+           x="-92.583412"
+           y="299.95221">List Fonts...</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#0500ff;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         x="-91.235481"
+         y="510.94473"
+         id="text3387"
+         sodipodi:linespacing="125%"
+         inkscape:export-filename="/home/crossland-fedora12/fontdownloaderui.png"
+         inkscape:export-xdpi="72.021759"
+         inkscape:export-ydpi="72.021759"><tspan
+           sodipodi:role="line"
+           x="-91.235481"
+           y="510.94473"
+           id="tspan3389"> Learn more...</tspan></text>
+      <path
+         inkscape:connector-curvature="0"
+         id="path3391"
+         d="m -91.101961,514.64692 64.67613,0"
+         style="fill:#000000;fill-opacity:1;stroke:#0500ff;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         style="fill:#000000;fill-opacity:1;stroke:#0500ff;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m -91.101961,304.16001 64.67613,0"
+         id="path3393"
+         inkscape:connector-curvature="0" />
+      <text
+         inkscape:export-ydpi="72.021759"
+         inkscape:export-xdpi="72.021759"
+         inkscape:export-filename="/home/crossland-fedora12/fontdownloaderui.png"
+         xml:space="preserve"
+         style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         x="556.22278"
+         y="414.36588"
+         id="text4363"
+         sodipodi:linespacing="125%"><tspan
+           sodipodi:role="line"
+           id="tspan4365"
+           x="556.22278"
+           y="414.36588">/home/username/Desktop/</tspan></text>
+      <text
+         inkscape:export-ydpi="72.021759"
+         inkscape:export-xdpi="72.021759"
+         inkscape:export-filename="/home/crossland-fedora12/fontdownloaderui.png"
+         sodipodi:linespacing="125%"
+         id="text4367"
+         y="390.99811"
+         x="551.55481"
+         style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         xml:space="preserve"><tspan
+           id="tspan4371"
+           y="390.99811"
+           x="551.55481"
+           sodipodi:role="line">Select download directory: </tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#0500ff;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         x="545.7229"
+         y="503.3378"
+         id="text4391"
+         sodipodi:linespacing="125%"
+         inkscape:export-filename="/home/crossland-fedora12/fontdownloaderui.png"
+         inkscape:export-xdpi="72.021759"
+         inkscape:export-ydpi="72.021759"><tspan
+           sodipodi:role="line"
+           x="545.7229"
+           y="503.3378"
+           id="tspan4393"> Learn more...</tspan></text>
+      <path
+         inkscape:connector-curvature="0"
+         id="path4395"
+         d="m 549.85639,507.03997 64.67613,0"
+         style="fill:#000000;fill-opacity:1;stroke:#0500ff;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <g
+         id="g4616"
+         transform="translate(28,0)">
+        <rect
+           transform="translate(33.875,82.25)"
+           y="320.3739"
+           x="746.05676"
+           height="16.843246"
+           width="19.815584"
+           id="rect4603"
+           style="fill:#eeeeec;fill-opacity:1;stroke:#2e3436;stroke-width:1;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+        <text
+           inkscape:export-ydpi="72.021759"
+           inkscape:export-xdpi="72.021759"
+           inkscape:export-filename="/home/crossland-fedora12/fontdownloaderui.png"
+           xml:space="preserve"
+           style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+           x="785.2403"
+           y="414.36588"
+           id="text4611"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan4613"
+             x="785.2403"
+             y="414.36588">...</tspan></text>
+      </g>
     </g>
     <g
        inkscape:groupmode="layer"
@@ -1661,7 +2271,7 @@
        inkscape:label="DownloadButton">
       <g
          id="g3653"
-         transform="matrix(0.25261328,0,0,0.25261328,41.14423,108.85159)"
+         transform="matrix(0.25261328,0,0,0.25261328,41.14423,144.85159)"
          inkscape:export-filename="/home/crossland-fedora12/fontdownloaderui.png"
          inkscape:export-xdpi="72.021759"
          inkscape:export-ydpi="72.021759">
@@ -1872,154 +2482,154 @@
       <text
          sodipodi:linespacing="125%"
          id="text5702"
-         y="138.55603"
+         y="174.55603"
          x="357.66492"
          style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
          xml:space="preserve"
          inkscape:export-filename="/home/crossland-fedora12/fontdownloaderui.png"
          inkscape:export-xdpi="72.021759"
          inkscape:export-ydpi="72.021759"><tspan
-           y="138.55603"
+           y="174.55603"
            x="357.66492"
            id="tspan5704"
            sodipodi:role="line">WOFF</tspan></text>
       <text
          sodipodi:linespacing="125%"
          id="text5706"
-         y="156.23991"
+         y="192.23991"
          x="358.14832"
          style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
          xml:space="preserve"
          inkscape:export-filename="/home/crossland-fedora12/fontdownloaderui.png"
          inkscape:export-xdpi="72.021759"
          inkscape:export-ydpi="72.021759"><tspan
-           y="156.23991"
+           y="192.23991"
            x="358.14832"
            id="tspan5708"
            sodipodi:role="line">WOFF</tspan></text>
       <text
          sodipodi:linespacing="125%"
          id="text5710"
-         y="172.74336"
+         y="208.74336"
          x="357.66492"
          style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
          xml:space="preserve"
          inkscape:export-filename="/home/crossland-fedora12/fontdownloaderui.png"
          inkscape:export-xdpi="72.021759"
          inkscape:export-ydpi="72.021759"><tspan
-           y="172.74336"
+           y="208.74336"
            x="357.66492"
            id="tspan5712"
            sodipodi:role="line">TTF</tspan></text>
       <text
          sodipodi:linespacing="125%"
          id="text5714"
-         y="190.42726"
+         y="226.42726"
          x="357.245"
          style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
          xml:space="preserve"
          inkscape:export-filename="/home/crossland-fedora12/fontdownloaderui.png"
          inkscape:export-xdpi="72.021759"
          inkscape:export-ydpi="72.021759"><tspan
-           y="190.42726"
+           y="226.42726"
            x="357.245"
            id="tspan5716"
            sodipodi:role="line">TTF</tspan></text>
       <text
          sodipodi:linespacing="125%"
          id="text5718"
-         y="207.52094"
+         y="243.52094"
          x="358.14832"
          style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
          xml:space="preserve"
          inkscape:export-filename="/home/crossland-fedora12/fontdownloaderui.png"
          inkscape:export-xdpi="72.021759"
          inkscape:export-ydpi="72.021759"><tspan
-           y="207.52094"
+           y="243.52094"
            x="358.14832"
            id="tspan5720"
            sodipodi:role="line">TTF</tspan></text>
       <text
          sodipodi:linespacing="125%"
          id="text5722"
-         y="258.34332"
+         y="294.34332"
          x="357.245"
          style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
          xml:space="preserve"
          inkscape:export-filename="/home/crossland-fedora12/fontdownloaderui.png"
          inkscape:export-xdpi="72.021759"
          inkscape:export-ydpi="72.021759"><tspan
-           y="258.34332"
+           y="294.34332"
            x="357.245"
            id="tspan5724"
            sodipodi:role="line">TTF</tspan></text>
       <text
          sodipodi:linespacing="125%"
          id="text5726"
-         y="276.02722"
+         y="312.02722"
          x="357.245"
          style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
          xml:space="preserve"
          inkscape:export-filename="/home/crossland-fedora12/fontdownloaderui.png"
          inkscape:export-xdpi="72.021759"
          inkscape:export-ydpi="72.021759"><tspan
-           y="276.02722"
+           y="312.02722"
            x="357.245"
            id="tspan5728"
            sodipodi:role="line">WOFF</tspan></text>
       <text
          sodipodi:linespacing="125%"
          id="text5730"
-         y="293.12091"
+         y="329.12091"
          x="358.14832"
          style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
          xml:space="preserve"
          inkscape:export-filename="/home/crossland-fedora12/fontdownloaderui.png"
          inkscape:export-xdpi="72.021759"
          inkscape:export-ydpi="72.021759"><tspan
-           y="293.12091"
+           y="329.12091"
            x="358.14832"
            id="tspan5732"
            sodipodi:role="line">EOT</tspan></text>
       <text
          sodipodi:linespacing="125%"
          id="text5734"
-         y="309.39502"
+         y="345.39502"
          x="357.245"
          style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
          xml:space="preserve"
          inkscape:export-filename="/home/crossland-fedora12/fontdownloaderui.png"
          inkscape:export-xdpi="72.021759"
          inkscape:export-ydpi="72.021759"><tspan
-           y="309.39502"
+           y="345.39502"
            x="357.245"
            id="tspan5736"
            sodipodi:role="line">SVG</tspan></text>
       <text
          sodipodi:linespacing="125%"
          id="text5738"
-         y="224.61461"
+         y="260.61462"
          x="357.66492"
          style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
          xml:space="preserve"
          inkscape:export-filename="/home/crossland-fedora12/fontdownloaderui.png"
          inkscape:export-xdpi="72.021759"
          inkscape:export-ydpi="72.021759"><tspan
-           y="224.61461"
+           y="260.61462"
            x="357.66492"
            id="tspan5740"
            sodipodi:role="line">TTF</tspan></text>
       <text
          sodipodi:linespacing="125%"
          id="text5742"
-         y="241.70837"
+         y="277.70837"
          x="357.245"
          style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
          xml:space="preserve"
          inkscape:export-filename="/home/crossland-fedora12/fontdownloaderui.png"
          inkscape:export-xdpi="72.021759"
          inkscape:export-ydpi="72.021759"><tspan
-           y="241.70837"
+           y="277.70837"
            x="357.245"
            id="tspan5744"
            sodipodi:role="line">WOFF</tspan></text>
@@ -2027,7 +2637,7 @@
          xml:space="preserve"
          style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
          x="357.66492"
-         y="118.48859"
+         y="154.48859"
          id="text5746"
          sodipodi:linespacing="125%"
          inkscape:export-filename="/home/crossland-fedora12/fontdownloaderui.png"
@@ -2036,7 +2646,7 @@
            sodipodi:role="line"
            id="tspan5748"
            x="357.66492"
-           y="118.48859">Format</tspan></text>
+           y="154.48859">Format</tspan></text>
     </g>
     <rect
        style="fill:#ffffff;fill-opacity:1;stroke:#888a85"
@@ -2044,16 +2654,16 @@
        width="10.485558"
        height="10.485558"
        x="42.081089"
-       y="130.2169" />
+       y="166.2169" />
     <rect
-       y="147.12868"
+       y="183.12868"
        x="42.081089"
        height="10.485558"
        width="10.485558"
        id="rect5893"
        style="fill:#ffffff;fill-opacity:1;stroke:#888a85" />
     <rect
-       y="164.2169"
+       y="200.2169"
        x="42.081089"
        height="10.485558"
        width="10.485558"
@@ -2065,16 +2675,16 @@
        width="10.485558"
        height="10.485558"
        x="42.081089"
-       y="181.12868" />
+       y="217.12868" />
     <rect
        style="fill:#ffffff;fill-opacity:1;stroke:#888a85"
        id="rect5899"
        width="10.485558"
        height="10.485558"
        x="42.081089"
-       y="198.49634" />
+       y="234.49634" />
     <rect
-       y="215.40811"
+       y="251.40811"
        x="42.081089"
        height="10.485558"
        width="10.485558"
@@ -2086,23 +2696,23 @@
        width="10.485558"
        height="10.485558"
        x="42.081089"
-       y="232.49634" />
+       y="268.49634" />
     <rect
        style="fill:#ffffff;fill-opacity:1;stroke:#888a85"
        id="rect5905"
        width="10.485558"
        height="10.485558"
        x="42.081089"
-       y="249.58456" />
+       y="285.58456" />
     <rect
-       y="266.49637"
+       y="302.49637"
        x="42.081089"
        height="10.485558"
        width="10.485558"
        id="rect5907"
        style="fill:#ffffff;fill-opacity:1;stroke:#888a85" />
     <rect
-       y="283.86401"
+       y="319.86401"
        x="42.081089"
        height="10.485558"
        width="10.485558"
@@ -2114,31 +2724,30 @@
        width="10.485558"
        height="10.485558"
        x="42.081089"
-       y="300.31992" />
+       y="336.31992" />
     <path
        style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 9.7049575,71.531325 2.0902985,2.164952 5.151093,-6.345549"
+       d="m 43.579957,189.78132 2.090299,2.16496 5.151093,-6.34555"
        id="path5913"
-       inkscape:connector-curvature="0"
-       transform="translate(33.875,82.25)" />
+       inkscape:connector-curvature="0" />
     <path
        inkscape:connector-curvature="0"
        id="path5915"
-       d="m 43.579957,170.27975 2.090299,2.16495 5.151093,-6.34554"
+       d="m 43.579957,206.27975 2.090299,2.16495 5.151093,-6.34554"
        style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
   </g>
   <g
      inkscape:groupmode="layer"
      id="layer9"
      inkscape:label="Preview"
-     transform="translate(-0.09375,0)">
+     transform="translate(168.5625,36.3125)">
     <rect
        style="fill:#ffffff;fill-opacity:1;stroke:#2e3436"
        id="rect5066"
        width="443"
        height="90"
        x="10"
-       y="262"
+       y="298"
        inkscape:export-filename="/home/crossland-fedora12/fontdownloaderui.png"
        inkscape:export-xdpi="72.021759"
        inkscape:export-ydpi="72.021759" />
@@ -2146,7 +2755,7 @@
        xml:space="preserve"
        style="font-size:53.54730606px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
        x="23.726067"
-       y="330.01379"
+       y="366.01379"
        id="text5068"
        sodipodi:linespacing="125%"
        inkscape:export-filename="/home/crossland-fedora12/fontdownloaderui.png"
@@ -2155,38 +2764,92 @@
          sodipodi:role="line"
          id="tspan5070"
          x="23.726067"
-         y="330.01379"
+         y="366.01379"
          style="font-size:72px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:League Gothic;-inkscape-font-specification:League Gothic">League Gothic</tspan></text>
   </g>
   <g
      inkscape:groupmode="layer"
      id="layer10"
      inkscape:label="Buttons"
-     transform="translate(-0.09375,0)">
+     transform="translate(168.5625,36.3125)">
+    <g
+       id="g3326"
+       transform="translate(0,30)">
+      <rect
+         inkscape:export-ydpi="72.021759"
+         inkscape:export-xdpi="72.021759"
+         inkscape:export-filename="/home/crossland-fedora12/fontdownloaderui.png"
+         y="369"
+         x="365"
+         height="30"
+         width="86"
+         id="rect5050"
+         style="fill:#eeeeec;fill-opacity:1;stroke:#2e3436" />
+      <text
+         inkscape:export-ydpi="72.021759"
+         inkscape:export-xdpi="72.021759"
+         inkscape:export-filename="/home/crossland-fedora12/fontdownloaderui.png"
+         sodipodi:linespacing="125%"
+         id="text5062"
+         y="388"
+         x="408.91846"
+         style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         xml:space="preserve"><tspan
+           style="text-align:center;text-anchor:middle"
+           y="388"
+           x="408.91846"
+           id="tspan5064"
+           sodipodi:role="line">Download</tspan></text>
+    </g>
+    <rect
+       inkscape:export-ydpi="72.021759"
+       inkscape:export-xdpi="72.021759"
+       inkscape:export-filename="/home/crossland-fedora12/fontdownloaderui.png"
+       y="404.78659"
+       x="705.53931"
+       height="30"
+       width="86"
+       id="rect4553"
+       style="fill:#eeeeec;fill-opacity:1;stroke:#2e3436" />
+    <text
+       inkscape:export-ydpi="72.021759"
+       inkscape:export-xdpi="72.021759"
+       inkscape:export-filename="/home/crossland-fedora12/fontdownloaderui.png"
+       sodipodi:linespacing="125%"
+       id="text4555"
+       y="423.78659"
+       x="749.45776"
+       style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       xml:space="preserve"><tspan
+         style="text-align:center;text-anchor:middle"
+         y="423.78659"
+         x="749.45776"
+         id="tspan4557"
+         sodipodi:role="line">OK</tspan></text>
     <rect
        style="fill:#eeeeec;fill-opacity:1;stroke:#2e3436"
-       id="rect5050"
+       id="rect4595"
        width="86"
        height="30"
-       x="365"
-       y="369"
+       x="610.15735"
+       y="404.78659"
        inkscape:export-filename="/home/crossland-fedora12/fontdownloaderui.png"
        inkscape:export-xdpi="72.021759"
        inkscape:export-ydpi="72.021759" />
     <text
        xml:space="preserve"
        style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
-       x="408.91846"
-       y="388"
-       id="text5062"
+       x="654.07581"
+       y="423.78659"
+       id="text4597"
        sodipodi:linespacing="125%"
        inkscape:export-filename="/home/crossland-fedora12/fontdownloaderui.png"
        inkscape:export-xdpi="72.021759"
        inkscape:export-ydpi="72.021759"><tspan
          sodipodi:role="line"
-         id="tspan5064"
-         x="408.91846"
-         y="388"
-         style="text-align:center;text-anchor:middle">Download</tspan></text>
+         id="tspan4599"
+         x="654.07581"
+         y="423.78659"
+         style="text-align:center;text-anchor:middle">Cancel</tspan></text>
   </g>
 </svg>
