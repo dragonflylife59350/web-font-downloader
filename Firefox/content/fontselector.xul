@@ -1,0 +1,100 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<?xml-stylesheet href="../skin/fontselector.css" type="text/css"?>
+
+<window
+    id="fontselector-window"
+    title="Font Selector"
+    xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+    xmlns:html="http://www.w3.org/1999/xhtml"
+    >
+
+  <label value="Select fonts to download using the checkbox on the left,"/>
+  <hbox>
+    <label value="then click Download."/><label class="link" value="Learn more..."/>
+  </hbox>
+    
+  <!-- fonte box for selection -->
+  <tree flex="1" rows="1">   
+    <treecols>
+      <treecol id="selector" label="s"/>  
+      <treecol id="css_name" label="CSS Name" flex="2"/>
+      <treecol id="font_url" label="URL" flex="8"/>
+      <treecol id="font_format" label="Format"/>
+      <treecol id="ps_name" label="PostScript Name" flex="2"/>  
+    </treecols>
+
+    <treechildren>
+      <treeitem>
+        <treerow>
+          <treecell label="V"/>
+          <treecell label="Gentium"/>
+          <treecell label="www.someotherweb.com/some/other/directory/blah-blah-blah"/>
+          <treecell label="TTF"/>
+          <treecell label="Gentium-Regular"/> 
+        </treerow>
+      </treeitem> 
+    </treechildren>
+  </tree>
+
+<!--  <spacer flex="1" /> -->
+  <hbox>
+    <label value="Type preview text into the box below:"/>
+    <spacer flex="1" />
+    <textbox type="number" size="2" onchange="set_preview_text_size(this.value)" id="font_size_spinner"/><label value="pt"/>
+  </hbox>
+  
+  <textbox id="livepreview-input" value="League Gothic" flex="1"/>
+
+  <hbox>
+    <label value="Configure..." class="link" oncommand="window.open('configure.xul', 'Web Font Downloader - Configure', 'chrome,width=500,height=400')" />
+    <spacer flex="1" />
+    <button oncommand="window.close();">Cancel</button>
+    <button oncommand="ask_download();">Download</button>
+  </hbox>
+
+  <script>
+const HTML_NS = "http://www.w3.org/1999/xhtml";
+window.$ = function(id) { return document.getElementById(id); };
+INITIAL_PREVIEW_TEXT_SIZE=72;
+
+function set_preview_text_size(v){
+  $("livepreview-input").style.fontSize = v+"pt";
+}
+
+function add_webfont_stylesheet(info){
+  var sheet = document.createElementNS(HTML_NS, "style");
+  sheet.setAttribute("type", "text/css");
+  var html = '@font-face { font-family: "'+info.fontfamily+'"; src: url("'+info.url+'")';
+  if (info.format) html += ' format("'+info.format+'")';
+  html += '}';
+  sheet.innerHTML = html;
+  window.appendChild(sheet);
+}
+
+function ask_download(){ 
+	var whatfont = window.info.url;
+	if (whatfont.indexOf("base64")>=0)
+		whatfont = "a base64-encoded font from this webpage (font family: \""+window.info.fontfamily+"\")";
+	var reply = confirm("This will copy " + whatfont + " to your fonts directory.\n\nPlease inspect the font to ensure it is free software or you are otherwise legally permitted to use this font on your computer. If it is not free software you may not be permitted to do so without paying for a license.");
+	if (reply){
+    FontsDownloader.download_it(window.info)
+    window.close();
+  }
+}
+
+function add_font_item(info){
+  return;
+}
+
+for (var i in detected_fonts){
+  var info = detected_fonts[i];
+  add_webfont_stylesheet(info);
+  add_font_item(info);
+}
+
+set_preview_text_size(INITIAL_PREVIEW_TEXT_SIZE);
+$("font_size_spinner").value=INITIAL_PREVIEW_TEXT_SIZE;
+
+  </script>
+</window>
