@@ -15,8 +15,8 @@
   </hbox>
     
   <!-- fonte box for selection -->
-  <tree flex="1" rows="1">   
-    <treecols>
+  <tree flex="1">
+      <treecols>
       <treecol id="selector" label="s"/>  
       <treecol id="css_name" label="CSS Name" flex="2"/>
       <treecol id="font_url" label="URL" flex="8"/>
@@ -24,16 +24,7 @@
       <treecol id="ps_name" label="PostScript Name" flex="2"/>  
     </treecols>
 
-    <treechildren>
-      <treeitem>
-        <treerow>
-          <treecell label="V"/>
-          <treecell label="Gentium"/>
-          <treecell label="www.someotherweb.com/some/other/directory/blah-blah-blah"/>
-          <treecell label="TTF"/>
-          <treecell label="Gentium-Regular"/> 
-        </treerow>
-      </treeitem> 
+    <treechildren id="fonts_tree">
     </treechildren>
   </tree>
 
@@ -55,6 +46,7 @@
 
   <script>
 const HTML_NS = "http://www.w3.org/1999/xhtml";
+const XUL_NS="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
 window.$ = function(id) { return document.getElementById(id); };
 INITIAL_PREVIEW_TEXT_SIZE=72;
 
@@ -69,7 +61,7 @@ function add_webfont_stylesheet(info){
   if (info.format) html += ' format("'+info.format+'")';
   html += '}';
   sheet.innerHTML = html;
-  window.appendChild(sheet);
+  document.documentElement.appendChild(sheet);
 }
 
 function ask_download(){ 
@@ -83,9 +75,38 @@ function ask_download(){
   }
 }
 
-function add_font_item(info){
-  return;
+function add_treecell(treerow, label){
+  var treecell = document.createElementNS(XUL_NS, "treecell");
+  treecell.setAttribute("label", label);
+  treerow.appendChild(treecell);
+  return treecell;
 }
+
+function add_font_item(info){
+  var treeitem = document.createElementNS(XUL_NS, "treeitem");
+  var treerow = document.createElementNS(XUL_NS, "treerow");
+
+  add_treecell(treerow, "V");
+  var cell = add_treecell(treerow, info.fontfamily);
+  cell.style.fontFamily = info.fontfamily;
+  add_treecell(treerow, info.url);
+  add_treecell(treerow, info.format);
+  add_treecell(treerow, info.fontfamily);
+
+  treeitem.appendChild(treerow);
+  document.getElementById("fonts_tree").appendChild(treeitem);
+}
+
+/*
+var detected_fonts = [
+  {
+	  "url": "file:///home/felipe/Desktop/MEgalopolis",
+	  "filename": "",
+	  "format": "woff",
+	  "fontfamily": "TestingFont"
+  }
+];
+*/					
 
 for (var i in detected_fonts){
   var info = detected_fonts[i];
