@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+
+<overlay
+	id="fontsdownloaderOverlay"
+  xmlns:html="http://www.w3.org/1999/xhtml"
+	xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+  <script type="application/x-javascript" src="chrome://fontsdownloader/content/utils.js"/>
+  <script type="application/x-javascript" src="chrome://fontsdownloader/content/fontsdownloader.js"/>
+
+	<statusbar id="status-bar">
+    <menu id="fontsdownloader-menu" label="Web Font Download Tool">  
+      <menupopup id="webfonts-popup">
+      	<menuitem label="Configure..." id="configure" onclick='window.open("chrome://fontsdownloader/content/configure.xul", "configure", "chrome,width=600,height=300");'/>  
+				<menuseparator/>
+      	<menuitem label="No webfonts detected." id="nowebfonts"/>  
+			</menupopup>
+    </menu>  
+ 	</statusbar>
+</overlay>
