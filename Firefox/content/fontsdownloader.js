@@ -51,7 +51,6 @@ function FontMenuItem(info, downloader){
   var item = document.createElementNS(XUL_NS, "menuitem");
 	item.addEventListener("click", function(){ var w = window.open("chrome://fontsdownloader/content/fontpreview.xul", "configure", "chrome,fullscreen=yes"); w.info = info; w.FontsDownloader = FontsDownloader}, false);
 
-
   item.setAttribute("label", info.fontfamily+" AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz");
 	item.setAttribute("style", "font-family: \""+info.fontfamily+"\";");
 
@@ -70,6 +69,7 @@ var FontsDownloader = {
       appcontent.addEventListener("DOMContentLoaded", FontsDownloader.onPageLoad, true);
 
       FontsDownloader.create_fonts_dir();
+      document.getElementById("listfonts").addEventListener("click", function(){ var w = window.open("chrome://fontsdownloader/content/fontselector.xul", "Web Font Downloader", "chrome,width=700,height=700"); w.detected_fonts = detected_fonts; }, false);
   },
 
   create_fonts_dir : function (){
@@ -152,7 +152,6 @@ var FontsDownloader = {
 							var popup = document.getElementById("webfonts-popup");
 							popup.appendChild(fmi);
 						}
-
           } catch(err){/*ignore*/}
         } 
       }
