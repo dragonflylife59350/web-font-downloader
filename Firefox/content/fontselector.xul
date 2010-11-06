@@ -9,13 +9,14 @@
     xmlns:html="http://www.w3.org/1999/xhtml"
     >
 
-  <label value="Select fonts to download using the checkbox on the left,"/>
   <hbox>
-    <label value="then click Download."/><label class="link" value="Learn more..."/>
-  </hbox>
+<box/>	
+  <label flex="1" value="Select fonts to download using the checkbox on the left, then click Download."/><label class="link" value="Learn more..."/>    <label value="Configure..." class="link" oncommand="window.open('configure.xul', 'Web Font Downloader - Configure', 'chrome,width=500,height=400')" />
+ <box/>
+ </hbox>
     
   <!-- fonte box for selection -->
-  <tree flex="1">
+  <tree flex="5">
       <treecols>
       <treecol id="selector" label="s"/>  
       <treecol id="css_name" label="CSS Name" flex="2"/>
@@ -28,20 +29,23 @@
     </treechildren>
   </tree>
 
-<!--  <spacer flex="1" /> -->
-  <hbox>
+  <splitter/>
+  <vbox>
+
+  <separator class="thin"/>
+  <hbox align="baseline">
     <label value="Type preview text into the box below:"/>
     <spacer flex="1" />
-    <textbox type="number" size="2" onchange="set_preview_text_size(this.value)" id="font_size_spinner"/><label value="pt"/>
   </hbox>
   
   <textbox id="livepreview-input" value="League Gothic" flex="1"/>
+  </vbox>
 
-  <hbox>
-    <label value="Configure..." class="link" oncommand="window.open('configure.xul', 'Web Font Downloader - Configure', 'chrome,width=500,height=400')" />
+  <hbox align="baseline">
+    <label value="Point size:"/><textbox increment="4" type="number" size="2" onchange="set_preview_text_size(this.value)" id="font_size_spinner"/>
     <spacer flex="1" />
-    <button oncommand="window.close();">Cancel</button>
-    <button oncommand="ask_download();">Download</button>
+    <button align="center" oncommand="window.close();">Cancel</button>
+    <button align="center" oncommand="ask_download();">Download</button>
   </hbox>
 
   <script>

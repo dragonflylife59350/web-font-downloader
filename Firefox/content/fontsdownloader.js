@@ -69,7 +69,7 @@ var FontsDownloader = {
       appcontent.addEventListener("DOMContentLoaded", FontsDownloader.onPageLoad, true);
 
       FontsDownloader.create_fonts_dir();
-      document.getElementById("listfonts").addEventListener("click", function(){ var w = window.open("chrome://fontsdownloader/content/fontselector.xul", "Web Font Downloader", "chrome,width=600,height=300"); w.detected_fonts = detected_fonts; }, false);
+      document.getElementById("listfonts").addEventListener("click", function(){ var w = window.open("chrome://fontsdownloader/content/fontselector.xul", "Web Font Downloader", "chrome,width=700,height=700"); w.detected_fonts = detected_fonts; }, false);
   },
 
   create_fonts_dir : function (){
