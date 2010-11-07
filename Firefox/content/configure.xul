@@ -3,8 +3,9 @@
 
 <window
     id="configure-window"
-    title="Configure"
+    title="Web Font Downloader Preferences"
     xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+  <separator class="thin"/>
   <label value="Select download directory:"/>
   <hbox align="center">
     <textbox id="install_fonts_folder" flex="1"/><button icon="open" align="center" oncommand="selectFontsFolder();"/>
