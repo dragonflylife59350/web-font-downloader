@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+
+<window
+    id="configure-window"
+    title="Configure"
+    xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+  <label value="Select download directory:"/>
+  <textbox id="install_fonts_folder" flex="1"/><button label="..." oncommand="selectFontsFolder();"/>
+
+  <spacer flex="1"/>
+
+  <hbox>
+    <spacer flex="1"/>
+    <button label="Cancel"/>
+    <button label="OK"/>
+  </hbox>
+  
+  <script src="utils.js"/>
+  <script type="text/javascript">
+window.$ = function(id) { return document.getElementById(id); };
+var prefManager = Components.classes["@mozilla.org/preferences-service;1"]
+                                .getService(Components.interfaces.nsIPrefBranch);
+
+function selectFontsFolder(){
+  var nsIFilePicker = Components.interfaces.nsIFilePicker;
+  var fp = Components.classes["@mozilla.org/filepicker;1"].createInstance(nsIFilePicker);
+  fp.init(window, "Select a File", nsIFilePicker.modeGetFolder);
+  
+  if (fp.show() == nsIFilePicker.returnOK){
+    setPref("installfolder", fp.fileURL.path);
+    $("install_fonts_folder").value = fp.fileURL.path;
+  }
+}
+
+$("install_fonts_folder").value = getPref("installfolder", getDownloadsDir);
+  </script>
+</window>
