@@ -17,7 +17,7 @@
   </hbox>
     
   <!-- fonte box for selection -->
-  <tree flex="5">
+  <tree flex="5" id="fonts_tree" onclick="onTreeClicked(event)">
       <treecols>
       <treecol id="selector" label="s"/>  
       <treecol id="css_name" label="CSS Name" flex="2"/>
@@ -26,7 +26,7 @@
       <treecol id="ps_name" label="PostScript Name" flex="2"/>  
     </treecols>
 
-    <treechildren id="fonts_tree">
+    <treechildren id="fonts_tree_children">
     </treechildren>
   </tree>
 
@@ -97,7 +97,7 @@ function add_font_item(info){
   add_treecell(treerow, info.fontfamily);
 
   treeitem.appendChild(treerow);
-  document.getElementById("fonts_tree").appendChild(treeitem);
+  document.getElementById("fonts_tree_children").appendChild(treeitem);
 }
 
 /*
@@ -119,6 +119,34 @@ for (var i in detected_fonts){
 
 set_preview_text_size(INITIAL_PREVIEW_TEXT_SIZE);
 $("font_size_spinner").value=INITIAL_PREVIEW_TEXT_SIZE;
+
+function set_font_preview_family(family){
+  var input = $("livepreview-input")
+  input.value = family;
+  input.style.fontFamily = family;
+}
+
+function toggle_font_selection(row){
+  //TODO
+}
+
+function onTreeClicked(event){
+  var tree = document.getElementById("fonts_tree");
+  var tbo = tree.treeBoxObject;
+
+  // get the row, col and child element at the point
+  var row = { }, col = { }, child = { };
+  tbo.getCellAt(event.clientX, event.clientY, row, col, child);
+
+  if (col==1) toggle_font_selection(row);
+  
+//  alert("row.value: " + row.value);
+  var family = tree.view.getCellText(row.value, col.value);
+  set_font_preview_family(family);
+  
+//  var cellText = tree.view.getCellText(row.value, col.value);
+//  alert(cellText);
+}
 
   </script>
 </window>
