@@ -4,7 +4,7 @@
 
 	<Description about="urn:mozilla:install-manifest">	
 		<em:id>fontsdownloader@fsanches.net</em:id>
-		<em:version>0.1</em:version>
+		<em:version>0.2svn</em:version>
 		<em:creator>Felipe Corrêa da Silva Sanches</em:creator>
 		<em:iconURL>chrome://fontsdownloader/skin/webfontdownloader-48x48.png</em:iconURL>
 		<em:type>2</em:type>
