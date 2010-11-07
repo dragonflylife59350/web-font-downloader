@@ -9,11 +9,12 @@
     xmlns:html="http://www.w3.org/1999/xhtml"
     >
 
-  <hbox>
-<box/>	
-  <label flex="1" value="Select fonts to download using the checkbox on the left, then click Download."/><label class="link" value="Learn more..."/>    <label value="Configure..." class="link" oncommand="window.open('configure.xul', 'Web Font Downloader - Configure', 'chrome,width=500,height=400')" />
- <box/>
- </hbox>
+  <hbox align="center">
+    <box/>
+      <label flex="1" value="Select fonts to download using the checkbox on the left, then click Download."/><label class="link" value="Learn more..."/>
+      <button icon="select-font" align="center" oncommand='window.open("chrome://fontsdownloader/content/configure.xul", "Web Font Downloader - Configuration options", "chrome,width=500,height=300")' label="Options"/>
+    <box/>
+  </hbox>
     
   <!-- fonte box for selection -->
   <tree flex="5">
@@ -33,7 +34,7 @@
   <vbox>
 
   <separator class="thin"/>
-  <hbox align="baseline">
+  <hbox align="center">
     <label value="Type preview text into the box below:"/>
     <spacer flex="1" />
   </hbox>
@@ -41,11 +42,11 @@
   <textbox id="livepreview-input" value="League Gothic" flex="1"/>
   </vbox>
 
-  <hbox align="baseline">
+  <hbox align="center">
     <label value="Point size:"/><textbox increment="4" type="number" size="2" onchange="set_preview_text_size(this.value)" id="font_size_spinner"/>
     <spacer flex="1" />
-    <button align="center" oncommand="window.close();">Cancel</button>
-    <button align="center" oncommand="ask_download();">Download</button>
+    <button icon="cancel" align="center" oncommand="window.close();" label="Cancel"/>
+    <button icon="save" align="center" oncommand="ask_download_many();" label="Download"/>
   </hbox>
 
   <script>
@@ -68,11 +69,9 @@ function add_webfont_stylesheet(info){
   document.documentElement.appendChild(sheet);
 }
 
-function ask_download(){ 
+function ask_download_many(){ 
 	var whatfont = window.info.url;
-	if (whatfont.indexOf("base64")>=0)
-		whatfont = "a base64-encoded font from this webpage (font family: \""+window.info.fontfamily+"\")";
-	var reply = confirm("This will copy " + whatfont + " to your fonts directory.\n\nPlease inspect the font to ensure it is free software or you are otherwise legally permitted to use this font on your computer. If it is not free software you may not be permitted to do so without paying for a license.");
+	var reply = confirm("This will copy the selected fonts to your fonts directory.\n\nPlease inspect the fonts to ensure they are free software or you are otherwise legally permitted to use these fonts on your computer. If these are not free software you may not be permitted to do so without paying for a license.");
 	if (reply){
     FontsDownloader.download_it(window.info)
     window.close();

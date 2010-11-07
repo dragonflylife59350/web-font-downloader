@@ -32,6 +32,13 @@
  *
  * ***** END LICENSE BLOCK ***** */
 
+function ask_download(info){
+  var reply = confirm("This will copy " + info.fontfamily + " to your fonts directory.\n\nPlease inspect the font to ensure it is free software or you are otherwise legally permitted to use this font on your computer. If it is not free software you may not be permitted to do so without paying for a license.");
+  if (reply){
+    FontsDownloader.download_it(info)
+  }
+}
+
 function FontMenuItem(info, downloader){
 	var nofonts = document.getElementById("nowebfonts");
 	if (nofonts)
@@ -49,7 +56,7 @@ function FontMenuItem(info, downloader){
 
   const XUL_NS = "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
   var item = document.createElementNS(XUL_NS, "menuitem");
-	item.addEventListener("click", function(){ var w = window.open("chrome://fontsdownloader/content/fontpreview.xul", "configure", "chrome,fullscreen=yes"); w.info = info; w.FontsDownloader = FontsDownloader}, false);
+	item.addEventListener("click", function(){ ask_download(info); }, false);
 
   item.setAttribute("label", info.fontfamily+" AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz");
 	item.setAttribute("style", "font-family: \""+info.fontfamily+"\";");
@@ -69,7 +76,7 @@ var FontsDownloader = {
       appcontent.addEventListener("DOMContentLoaded", FontsDownloader.onPageLoad, true);
 
       FontsDownloader.create_fonts_dir();
-      document.getElementById("listfonts").addEventListener("click", function(){ var w = window.open("chrome://fontsdownloader/content/fontselector.xul", "Web Font Downloader", "chrome,width=700,height=700"); w.detected_fonts = detected_fonts; }, false);
+      document.getElementById("listfonts").addEventListener("click", function(){ var w = window.open("chrome://fontsdownloader/content/fontselector.xul", "Web Font Downloader", "chrome,width=720,height=720"); w.detected_fonts = detected_fonts; }, false);
   },
 
   create_fonts_dir : function (){
