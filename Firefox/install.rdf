@@ -6,7 +6,7 @@
 		<em:id>fontsdownloader@fsanches.net</em:id>
 		<em:version>0.1</em:version>
 		<em:creator>Felipe Corrêa da Silva Sanches</em:creator>
-		<em:iconURL>chrome://fontsdownloader/skin/fontsdownloader-icon.png</em:iconURL>
+		<em:iconURL>chrome://fontsdownloader/skin/webfontdownloader-48x48.png</em:iconURL>
 		<em:type>2</em:type>
 
     <em:localized>
@@ -21,7 +21,7 @@
       <Description>
         <em:locale>en-US</em:locale>
         <em:name>Web Font Downloader</em:name>
-        <em:description>Allows local instalation of fonts found in web pages.</em:description>
+        <em:description>Installing web fonts easily!</em:description>
       </Description>
     </em:localized>
 
