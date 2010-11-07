@@ -10,6 +10,10 @@ zip fontsdownloader-svn.xpi \
 		skin/fontpreview.css \
 		skin/statusbarOverlay.css \
 		skin/font-icon.png \
+		skin/webfontdownloader-16x16.png \
+		skin/webfontdownloader-32x32.png \
+		skin/webfontdownloader-16x16.svg \
+		skin/webfontdownloader-32x32.svg \
 		install.rdf \
 		LICENSE.TXT \
 		chrome.manifest
