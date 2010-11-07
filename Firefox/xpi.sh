@@ -1,5 +1,5 @@
 #!/bin/bash
-zip fontsdownloader-svn.xpi \
+zip web-font-downloader-svn.xpi \
 		content/overlay.xul \
 		content/configure.xul \
 		content/fontpreview.xul \
