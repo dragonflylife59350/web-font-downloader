@@ -23,7 +23,7 @@
       <treecol id="css_name" label="CSS Name" flex="2"/>
       <treecol id="font_url" label="URL" flex="8"/>
       <treecol id="font_format" label="Format"/>
-      <treecol id="ps_name" label="PostScript Name" flex="2"/>  
+      <!-- TODO this would be when we can see metadata inside the font file, somehow...  <treecol id="ps_name" label="PS Name" flex="2"/>  -->
     </treecols>
 
     <treechildren id="fonts_tree_children">
