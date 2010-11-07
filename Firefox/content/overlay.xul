@@ -13,7 +13,7 @@
       <image id="StatusIcon" />
 
       <menupopup id="webfonts-popup">
-      	<menuitem label="List Fonts..." id="listfonts"/>  
+      	<menuitem label="Download multiple fonts..." id="listfonts"/>
         <menuseparator/>
       	<menuitem label="No webfonts detected." id="nowebfonts"/>
       	<menuseparator id="bottom_of_fonts_list"/>

@@ -6,14 +6,15 @@
     title="Configure"
     xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
   <label value="Select download directory:"/>
-  <textbox id="install_fonts_folder" flex="1"/><button label="..." oncommand="selectFontsFolder();"/>
-
+  <hbox align="center">
+    <textbox id="install_fonts_folder" flex="1"/><button icon="open" align="center" oncommand="selectFontsFolder();"/>
+  </hbox>
+  
   <spacer flex="1"/>
 
   <hbox>
     <spacer flex="1"/>
-    <button label="Cancel"/>
-    <button label="OK"/>
+    <button icon="accept" label="OK" oncommand="window.close()" />
   </hbox>
   
   <script src="utils.js"/>
