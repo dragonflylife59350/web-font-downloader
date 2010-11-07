@@ -10,13 +10,13 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   sodipodi:docname="fontdownloadericon-32x32.svg"
+   sodipodi:docname="webfontdownloader-32x32.svg"
    inkscape:version="0.48+devel r9680 custom"
    sodipodi:version="0.32"
    id="svg11300"
    height="32"
    width="32"
-   inkscape:export-filename="fontdownloadericon-32x32.png"
+   inkscape:export-filename="webfontdownloader-32x32.png"
    inkscape:export-xdpi="90.000000"
    inkscape:export-ydpi="90.000000"
    version="1.0"
@@ -158,15 +158,15 @@
   <sodipodi:namedview
      inkscape:window-y="25"
      inkscape:window-x="0"
-     inkscape:window-height="822"
-     inkscape:window-width="1270"
+     inkscape:window-height="825"
+     inkscape:window-width="1440"
      inkscape:showpageshadow="true"
      inkscape:document-units="px"
      inkscape:grid-bbox="true"
      showgrid="true"
      inkscape:current-layer="layer1"
      inkscape:cy="17.258372"
-     inkscape:cx="15.643148"
+     inkscape:cx="7.6054469"
      inkscape:zoom="22.394463"
      inkscape:pageshadow="2"
      inkscape:pageopacity="0.0"
@@ -181,7 +181,7 @@
      showborder="true"
      borderlayer="true"
      inkscape:snap-global="false"
-     inkscape:window-maximized="0">
+     inkscape:window-maximized="1">
     <inkscape:grid
        type="xygrid"
        id="grid3025"
@@ -268,14 +268,14 @@
        sodipodi:nodetypes="cccccccc"
        inkscape:connector-curvature="0" />
     <g
-       style="font-size:17.55536461px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-miterlimit:4;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       style="font-size:17.55536461000000159px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:#2e3436;stroke-width:1;stroke-miterlimit:4;stroke-opacity:1;font-family:Bitstream Vera Sans;stroke-dasharray:none;stroke-linejoin:bevel;stroke-linecap:square"
        id="text3086">
       <path
-         style="font-variant:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;font-family:ChunkFive;-inkscape-font-specification:ChunkFive"
-         d="m 16.649966,6.3084323 c -3.761604,0 -3.675234,0.5150418 -3.675234,5.4849537 l -1.344925,0 0,2.449649 1.344925,0 0,3.537089 -1.885543,0 0,2.500694 7.374886,0 0,-2.500694 -2.191997,0 0,-3.537089 2.044078,0 0,-2.449649 -2.044078,0 c 0,0 -0.09738,-3.2503804 0.501412,-3.2503804 0.76077,0 -0.942898,1.9658734 2.199839,1.9212194 1.689848,-0.02401 1.330662,-0.8284375 1.330662,-2.1456653 0,-2.0761112 -1.467392,-2.0101274 -3.654025,-2.0101274 z"
+         style="font-variant:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;stroke:#2e3436;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;font-family:ChunkFive;-inkscape-font-specification:ChunkFive"
+         d="m 13.613504,7.5182323 -0.05827,4.0072277 -1.032347,0 0,2.047764 1.032347,0 0,2.911935 -1.037119,0.04465 0,1.964847 5.990616,0 0,-2.009501 -2.015459,0 0,-2.911935 1.956847,0 0,-2.047764 -1.956847,0 0,-1.989615 1.944212,0.0353 0.04429,-2.0352993 z"
          id="path3859"
          inkscape:connector-curvature="0"
-         sodipodi:nodetypes="sccccccccccccccssss" />
+         sodipodi:nodetypes="ccccccccccccccccccc" />
     </g>
   </g>
   <g
