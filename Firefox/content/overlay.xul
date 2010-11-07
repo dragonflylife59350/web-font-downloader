@@ -10,9 +10,11 @@
 	<statusbar id="status-bar">
     <menu id="fontsdownloader-menu" label="Web Font Download Tool">  
       <menupopup id="webfonts-popup">
-      	<menuitem label="Configure..." id="configure" onclick='window.open("chrome://fontsdownloader/content/configure.xul", "configure", "chrome,width=600,height=300");'/>  
+      	<menuitem label="List Fonts..." id="listfonts"/>  
 				<menuseparator/>
-      	<menuitem label="No webfonts detected." id="nowebfonts"/>  
+      	<menuitem label="No webfonts detected." id="nowebfonts"/>
+      	<menuseparator/>
+      	<menuitem label="Learn more..." class="link" oncommand="alert('TODO: Learn more link...')"/>
 			</menupopup>
     </menu>  
  	</statusbar>
