@@ -1,0 +1,14 @@
+* let user define fonts dir (configuration panel)
+* autodetect operation system and suggest default fonts dir
+* open a font preview dialog instead of downloading directly.
+* FontPreview area would be great. downloadthemall style
+* handle declaration of multiple alternatives for same family-name
+* handle multiple url and type keywords in a single @font-face declaration
+
+* correct url handling when font is embedded with data:base64 --DONE 
+* apply style to xul:menuitem instead of html:p --DONE
+* use webfont preview in fonts list --DONE
+* data url encoding first tho --DONE
+* and woff copying to dir --DONE
+* avoid duplicates in the fonts list --DONE
+

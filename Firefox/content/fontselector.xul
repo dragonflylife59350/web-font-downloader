@@ -1,0 +1,152 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<?xml-stylesheet href="../skin/fontselector.css" type="text/css"?>
+
+<window
+    id="fontselector-window"
+    title="Font Selector"
+    xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+    xmlns:html="http://www.w3.org/1999/xhtml"
+    >
+
+  <hbox align="center">
+    <box/>
+      <label flex="1" value="Select fonts to download using the checkbox on the left, then click Download."/><label class="text-link" value="Learn more..." onclick="var win = Components.classes['@mozilla.org/appshell/window-mediator;1'].getService(Components.interfaces.nsIWindowMediator).getMostRecentWindow('navigator:browser'); win.openUILinkIn('http://webfontdownload.org', 'tab');"/>
+      <button icon="select-font" align="center" oncommand='window.open("chrome://fontsdownloader/content/configure.xul", "Web Font Downloader - Configuration options", "chrome,width=500,height=100")' label="Options"/>
+    <box/>
+  </hbox>
+    
+  <!-- fonte box for selection -->
+  <tree flex="5" id="fonts_tree" onclick="onTreeClicked(event)">
+      <treecols>
+      <treecol id="selector" label="s"/>  
+      <treecol id="css_name" label="CSS Name" flex="2"/>
+      <treecol id="font_url" label="URL" flex="8"/>
+      <treecol id="font_format" label="Format"/>
+      <treecol id="ps_name" label="PostScript Name" flex="2"/>  
+    </treecols>
+
+    <treechildren id="fonts_tree_children">
+    </treechildren>
+  </tree>
+
+  <splitter/>
+  <vbox>
+
+  <separator class="thin"/>
+  <hbox align="center">
+    <label value="Type preview text into the box below:"/>
+    <spacer flex="1" />
+  </hbox>
+  
+  <textbox id="livepreview-input" value="" flex="1"/>
+  </vbox>
+
+  <hbox align="center">
+    <label value="Point size:"/><textbox increment="4" type="number" size="2" onchange="set_preview_text_size(this.value)" id="font_size_spinner"/>
+    <spacer flex="1" />
+    <button icon="cancel" align="center" oncommand="window.close();" label="Cancel"/>
+    <button icon="save" align="center" oncommand="ask_download_many();" label="Download"/>
+  </hbox>
+
+  <script>
+const HTML_NS = "http://www.w3.org/1999/xhtml";
+const XUL_NS="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
+window.$ = function(id) { return document.getElementById(id); };
+INITIAL_PREVIEW_TEXT_SIZE=72;
+
+function set_preview_text_size(v){
+  $("livepreview-input").style.fontSize = v+"pt";
+}
+
+function add_webfont_stylesheet(info){
+  var sheet = document.createElementNS(HTML_NS, "style");
+  sheet.setAttribute("type", "text/css");
+  var html = '@font-face { font-family: "'+info.fontfamily+'"; src: url("'+info.url+'")';
+  if (info.format) html += ' format("'+info.format+'")';
+  html += '}';
+  sheet.innerHTML = html;
+  document.documentElement.appendChild(sheet);
+}
+
+function ask_download_many(){ 
+	var whatfont = window.info.url;
+	var reply = confirm("This will copy the selected fonts to your fonts directory.\n\nPlease inspect the fonts to ensure they are free software or you are otherwise legally permitted to use these fonts on your computer. If these are not free software you may not be permitted to do so without paying for a license.");
+	if (reply){
+    FontsDownloader.download_it(window.info)
+    window.close();
+  }
+}
+
+function add_treecell(treerow, label){
+  var treecell = document.createElementNS(XUL_NS, "treecell");
+  treecell.setAttribute("label", label);
+  treerow.appendChild(treecell);
+  return treecell;
+}
+
+function add_font_item(info){
+  var treeitem = document.createElementNS(XUL_NS, "treeitem");
+  var treerow = document.createElementNS(XUL_NS, "treerow");
+
+  add_treecell(treerow, "V");
+  var cell = add_treecell(treerow, info.fontfamily);
+  cell.style.fontFamily = info.fontfamily;
+  add_treecell(treerow, info.url);
+  add_treecell(treerow, info.format);
+  add_treecell(treerow, info.fontfamily);
+
+  treeitem.appendChild(treerow);
+  document.getElementById("fonts_tree_children").appendChild(treeitem);
+}
+
+/*
+var detected_fonts = [
+  {
+	  "url": "file:///home/felipe/Desktop/MEgalopolis",
+	  "filename": "",
+	  "format": "woff",
+	  "fontfamily": "TestingFont"
+  }
+];
+*/					
+
+for (var i in detected_fonts){
+  var info = detected_fonts[i];
+  add_webfont_stylesheet(info);
+  add_font_item(info);
+}
+
+set_preview_text_size(INITIAL_PREVIEW_TEXT_SIZE);
+$("font_size_spinner").value=INITIAL_PREVIEW_TEXT_SIZE;
+
+function set_font_preview_family(family){
+  var input = $("livepreview-input")
+  input.value = family;
+  input.style.fontFamily = family;
+}
+
+function toggle_font_selection(row){
+  //TODO
+}
+
+function onTreeClicked(event){
+  var tree = document.getElementById("fonts_tree");
+  var tbo = tree.treeBoxObject;
+
+  // get the row, col and child element at the point
+  var row = { }, col = { }, child = { };
+  tbo.getCellAt(event.clientX, event.clientY, row, col, child);
+
+  if (col==1) toggle_font_selection(row);
+  
+//  alert("row.value: " + row.value);
+  var family = tree.view.getCellText(row.value, col.value);
+  set_font_preview_family(family);
+  
+//  var cellText = tree.view.getCellText(row.value, col.value);
+//  alert(cellText);
+}
+
+  </script>
+</window>
