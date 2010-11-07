@@ -10,13 +10,13 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   sodipodi:docname="go-down.svg"
+   sodipodi:docname="webfontdownloader-16x16.svg"
    inkscape:version="0.48+devel r9680 custom"
    sodipodi:version="0.32"
    id="svg11300"
    height="16"
    width="16"
-   inkscape:export-filename="fontdownloadericon-16x16.png"
+   inkscape:export-filename="webfontdownloader-16x16.png"
    inkscape:export-xdpi="90.000000"
    inkscape:export-ydpi="90.000000"
    version="1.0"
@@ -129,11 +129,11 @@
      inkscape:showpageshadow="false"
      inkscape:document-units="px"
      inkscape:grid-bbox="true"
-     showgrid="false"
+     showgrid="true"
      inkscape:current-layer="layer1"
-     inkscape:cy="8.9414244"
-     inkscape:cx="8.5034573"
-     inkscape:zoom="29.146144"
+     inkscape:cy="9.6032733"
+     inkscape:cx="8.4436903"
+     inkscape:zoom="22.627417"
      inkscape:pageshadow="2"
      inkscape:pageopacity="0.0"
      borderopacity="1"
@@ -177,7 +177,7 @@
         <dc:source />
         <cc:license
            rdf:resource="http://creativecommons.org/licenses/publicdomain/" />
-        <dc:title></dc:title>
+        <dc:title />
         <dc:subject>
           <rdf:Bag>
             <rdf:li>go</rdf:li>
@@ -225,15 +225,23 @@ Jakub Steiner</dc:title>
        d="M 5.5,1.5 L 5.5,6.5 L 2.5,6.5 L 8,14 L 13.5,6.5 L 10.5,6.5 L 10.5,1.5 L 5.5,1.5 z "
        id="path8658"
        sodipodi:nodetypes="cccccccc" />
-    <g
-       style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:#2e3436;stroke-width:0.30000001;stroke-miterlimit:4;stroke-opacity:1;font-family:Century Schoolbook L;-inkscape-font-specification:Century Schoolbook L Bold"
-       id="text3001">
-      <path
-         style="line-height:125%;stroke:#2e3436;stroke-linecap:round;stroke-linejoin:round;font-family:Century Schoolbook L;-inkscape-font-specification:Century Schoolbook L Bold"
-         d="m 9.5044555,5.8674314 -1.2855825,0 c 0,0 -0.1906262,-1.7592646 0.2573726,-1.7760788 0.848866,-0.031859 -0.4167117,1.6120739 1.0271352,1.6120739 0.8381432,0 0.6486262,-0.9960351 0.6394472,-1.4416579 C 10.118567,3.0839392 9.4309498,2.6702155 8.4577403,2.667098 6.5922069,2.6611222 6.7669569,4.35463 6.7695271,5.8674314 l -0.6325587,0 0,1.2113588 0.6325587,0 0,2.5488096 -0.8266446,0.2426073 0,1.2415409 3.561573,0 0,-1.2415409 -1.2855825,-0.2426073 0,-2.5488096 1.2855825,0 z"
-         id="path3792"
-         inkscape:connector-curvature="0"
-         sodipodi:nodetypes="ccssssccccccccccccc" />
-    </g>
+    <path
+       style="fill:none;stroke:#ffffff;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 6.5045796,10.501643 2.9934693,0"
+       id="path5087"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#ffffff;stroke-width:1px;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+       d="m 9.4984754,4.7256639 0,-1.2244775 -1.9976949,0 0,6.7690676"
+       id="path5085"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc" />
+    <path
+       style="fill:none;stroke:#ffffff;stroke-width:1px;stroke-linecap:round;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 6.4993968,6.5001556 3.0018682,0"
+       id="path5080"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
   </g>
 </svg>
