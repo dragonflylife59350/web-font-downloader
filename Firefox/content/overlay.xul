@@ -14,9 +14,9 @@
 
       <menupopup id="webfonts-popup">
       	<menuitem label="List Fonts..." id="listfonts"/>  
-	<menuseparator/>
+        <menuseparator/>
       	<menuitem label="No webfonts detected." id="nowebfonts"/>
-      	<menuseparator/>
+      	<menuseparator id="bottom_of_fonts_list"/>
       	<menuitem label="Learn more..." class="link" oncommand="alert('TODO: Learn more link...')"/>
       </menupopup>
     </statusbarpanel>

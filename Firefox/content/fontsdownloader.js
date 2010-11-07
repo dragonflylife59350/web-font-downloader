@@ -156,8 +156,8 @@ var FontsDownloader = {
 						if (!detected_fonts[[fontfamily, format]]){
 							detected_fonts[[fontfamily, format]] = font_info;
 							var fmi = FontMenuItem(font_info, FontsDownloader);
-							var popup = document.getElementById("webfonts-popup");
-							popup.appendChild(fmi);
+							var bottom = document.getElementById("bottom_of_fonts_list");
+							bottom.parentNode.insertBefore(fmi, bottom);
 						}
           } catch(err){/*ignore*/}
         } 
