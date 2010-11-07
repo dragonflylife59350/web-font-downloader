@@ -1,4 +1,5 @@
 <?xml version="1.0"?>
+<?xml-stylesheet href="chrome://fontsdownloader/skin/statusbarOverlay.css"?>
 
 <overlay
 	id="fontsdownloaderOverlay"
@@ -7,15 +8,19 @@
   <script type="application/x-javascript" src="chrome://fontsdownloader/content/utils.js"/>
   <script type="application/x-javascript" src="chrome://fontsdownloader/content/fontsdownloader.js"/>
 
-	<statusbar id="status-bar">
-    <menu id="fontsdownloader-menu" label="Web Font Download Tool">  
+  <statusbar id="status-bar">
+    <statusbarpanel class="statusbarpanel-menu-iconic" tooltiptext="Show downloadable web fonts">
+      <image id="StatusIcon" />
+
       <menupopup id="webfonts-popup">
       	<menuitem label="List Fonts..." id="listfonts"/>  
-				<menuseparator/>
+	<menuseparator/>
       	<menuitem label="No webfonts detected." id="nowebfonts"/>
       	<menuseparator/>
       	<menuitem label="Learn more..." class="link" oncommand="alert('TODO: Learn more link...')"/>
-			</menupopup>
-    </menu>  
- 	</statusbar>
+      </menupopup>
+    </statusbarpanel>
+  </statusbar>
 </overlay>
+
+
