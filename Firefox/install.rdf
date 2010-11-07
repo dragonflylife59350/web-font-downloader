@@ -12,7 +12,7 @@
     <em:localized>
       <Description>
         <em:locale>pt-BR</em:locale>
-        <em:name>FontsDownloader</em:name>
+        <em:name>Web Font Downloader</em:name>
         <em:description>Permite a instalação local de fontes usadas em páginas da web.</em:description>
       </Description>
     </em:localized>
@@ -20,7 +20,7 @@
     <em:localized>
       <Description>
         <em:locale>en-US</em:locale>
-        <em:name>FontsDownloader</em:name>
+        <em:name>Web Font Downloader</em:name>
         <em:description>Allows local instalation of fonts found in web pages.</em:description>
       </Description>
     </em:localized>

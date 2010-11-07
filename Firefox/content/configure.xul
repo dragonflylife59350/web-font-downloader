@@ -5,8 +5,17 @@
     id="configure-window"
     title="Configure"
     xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
-  <hbox><label value="Install fonts in:"/><label id="install_fonts_folder"/><button label="Select folder..." oncommand="selectFontsFolder();"/></hbox>
+  <label value="Select download directory:"/>
+  <textbox id="install_fonts_folder" flex="1"/><button label="..." oncommand="selectFontsFolder();"/>
 
+  <spacer flex="1"/>
+
+  <hbox>
+    <spacer flex="1"/>
+    <button label="Cancel"/>
+    <button label="OK"/>
+  </hbox>
+  
   <script src="utils.js"/>
   <script type="text/javascript">
 window.$ = function(id) { return document.getElementById(id); };
