@@ -103,13 +103,25 @@ function add_font_item(info){
 /*
 var detected_fonts = [
   {
+	  "url": "file:///home/felipe/Desktop/bad",
+	  "filename": "",
+	  "format": "woff",
+	  "fontfamily": "BadFont"
+  }
+,  {
 	  "url": "file:///home/felipe/Desktop/MEgalopolis",
 	  "filename": "",
 	  "format": "woff",
-	  "fontfamily": "TestingFont"
+	  "fontfamily": "MEgalopolis"
+  }
+,  {
+	  "url": "file:///home/felipe/Desktop/wrong",
+	  "filename": "",
+	  "format": "woff",
+	  "fontfamily": "WrongFont"
   }
 ];
-*/					
+*/
 
 for (var i in detected_fonts){
   var info = detected_fonts[i];
@@ -138,10 +150,10 @@ function onTreeClicked(event){
   var row = { }, col = { }, child = { };
   tbo.getCellAt(event.clientX, event.clientY, row, col, child);
 
-  if (col==1) toggle_font_selection(row);
+  toggle_font_selection(row);
   
 //  alert("row.value: " + row.value);
-  var family = tree.view.getCellText(row.value, col.value);
+  var family = tree.view.getCellText(row.value, tbo.columns[1]);
   set_font_preview_family(family);
   
 //  var cellText = tree.view.getCellText(row.value, col.value);
