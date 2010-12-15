@@ -7,6 +7,7 @@
     title="Web Font Downloader"
     xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
     xmlns:html="http://www.w3.org/1999/xhtml"
+    onload="onWindowLoad(event)"
     >
 
   <hbox align="center">
@@ -54,6 +55,15 @@ const HTML_NS = "http://www.w3.org/1999/xhtml";
 const XUL_NS="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
 window.$ = function(id) { return document.getElementById(id); };
 INITIAL_PREVIEW_TEXT_SIZE=72;
+
+function onWindowLoad(evt){
+  //auto-select first row:
+  var tree = document.getElementById("fonts_tree");
+  var tbo = tree.treeBoxObject;
+  tree.view.selection.select(0);
+  var family = tree.view.getCellText(0, tbo.columns[1]);
+  set_font_preview_family(family);
+}
 
 function set_preview_text_size(v){
   $("livepreview-input").style.fontSize = v+"pt";
@@ -159,12 +169,8 @@ function onTreeClicked(event){
 
   toggle_font_selection(row);
   
-//  alert("row.value: " + row.value);
   var family = tree.view.getCellText(row.value, tbo.columns[1]);
   set_font_preview_family(family);
-  
-//  var cellText = tree.view.getCellText(row.value, col.value);
-//  alert(cellText);
 }
 
   </script>
