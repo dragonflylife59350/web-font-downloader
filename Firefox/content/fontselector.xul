@@ -18,7 +18,7 @@
   </hbox>
     
   <!-- fonte box for selection -->
-  <tree flex="5" id="fonts_tree" onclick="onTreeClicked(event)" editable="true">
+  <tree flex="5" id="fonts_tree" editable="true" seltype="single" onselect="onSelect(event)">
       <treecols>
       <treecol id="selector" type="checkbox" editable="true"/>  
       <treecol id="css_name" label="CSS Name" flex="2"/>
@@ -50,18 +50,44 @@
     <button icon="save" align="center" oncommand="ask_download_many();" label="Download"/>
   </hbox>
 
-  <script>
+  <script><![CDATA[
 const HTML_NS = "http://www.w3.org/1999/xhtml";
 const XUL_NS="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
 window.$ = function(id) { return document.getElementById(id); };
 INITIAL_PREVIEW_TEXT_SIZE=72;
 
+function keyDown(event){
+  var tree = document.getElementById("fonts_tree");
+  const H_KEY=72, L_KEY=76;
+  
+  switch(event.which){
+    case L_KEY:
+      if (tree.currentIndex < tree.view.rowCount-1){
+        tree.view.selection.select(tree.currentIndex+1);
+      }
+	    break;
+    case H_KEY:
+      if (tree.currentIndex>0){
+        tree.view.selection.select(tree.currentIndex-1);
+      }
+	    break;
+	}
+	return true;
+}
+
 function onWindowLoad(evt){
   //auto-select first row:
   var tree = document.getElementById("fonts_tree");
-  var tbo = tree.treeBoxObject;
   tree.view.selection.select(0);
-  var family = tree.view.getCellText(0, tbo.columns[1]);
+  tree.focus();
+  
+  tree.onkeydown = keyDown;
+}
+
+function onSelect(evt){
+  var tree = document.getElementById("fonts_tree");
+  var tbo = tree.treeBoxObject;
+  var family = tree.view.getCellText(tree.currentIndex, tbo.columns[1]);
   set_font_preview_family(family);
 }
 
@@ -155,23 +181,5 @@ function set_font_preview_family(family){
   input.style.fontFamily = family;
 }
 
-function toggle_font_selection(row){
-  //TODO
-}
-
-function onTreeClicked(event){
-  var tree = document.getElementById("fonts_tree");
-  var tbo = tree.treeBoxObject;
-
-  // get the row, col and child element at the point
-  var row = { }, col = { }, child = { };
-  tbo.getCellAt(event.clientX, event.clientY, row, col, child);
-
-  toggle_font_selection(row);
-  
-  var family = tree.view.getCellText(row.value, tbo.columns[1]);
-  set_font_preview_family(family);
-}
-
-  </script>
+]]></script>
 </window>
