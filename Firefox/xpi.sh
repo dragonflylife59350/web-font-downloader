@@ -8,6 +8,7 @@ zip web-font-downloader-svn.xpi \
 		content/utils.js \
 		defaults/preferences/webfontdownloader.js \
 		skin/fontpreview.css \
+		skin/fontselector.css \
 		skin/statusbarOverlay.css \
 		skin/font-icon.png \
 		skin/webfontdownloader-16x16.png \

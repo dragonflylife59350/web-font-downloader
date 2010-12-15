@@ -17,9 +17,9 @@
   </hbox>
     
   <!-- fonte box for selection -->
-  <tree flex="5" id="fonts_tree" onclick="onTreeClicked(event)">
+  <tree flex="5" id="fonts_tree" onclick="onTreeClicked(event)" editable="true">
       <treecols>
-      <treecol id="selector" label="s"/>  
+      <treecol id="selector" type="checkbox" editable="true"/>  
       <treecol id="css_name" label="CSS Name" flex="2"/>
       <treecol id="font_url" label="URL" flex="8"/>
       <treecol id="font_format" label="Format"/>
@@ -85,11 +85,18 @@ function add_treecell(treerow, label){
   return treecell;
 }
 
+function add_checkbox(treerow){
+  var treecell = document.createElementNS(XUL_NS, "treecell");
+  treecell.setAttribute("value", "false");
+  treerow.appendChild(treecell);
+  return treecell;
+}
+
 function add_font_item(info){
   var treeitem = document.createElementNS(XUL_NS, "treeitem");
   var treerow = document.createElementNS(XUL_NS, "treerow");
-
-  add_treecell(treerow, "V");
+  
+  add_checkbox(treerow);
   var cell = add_treecell(treerow, info.fontfamily);
   cell.style.fontFamily = info.fontfamily;
   add_treecell(treerow, info.url);
