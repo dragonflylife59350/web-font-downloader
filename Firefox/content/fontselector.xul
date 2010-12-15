@@ -58,9 +58,15 @@ INITIAL_PREVIEW_TEXT_SIZE=72;
 
 function keyDown(event){
   var tree = document.getElementById("fonts_tree");
-  const H_KEY=72, L_KEY=76;
+  var tbo = tree.treeBoxObject;
+
+  const H_KEY=72, L_KEY=76, SPACEBAR=32;
   
   switch(event.which){
+    case SPACEBAR:
+      var value = tree.view.getCellValue(tree.currentIndex, tbo.columns[0]);
+      tree.view.setCellValue(tree.currentIndex, tbo.columns[0], value=="false");
+	    break;
     case L_KEY:
       if (tree.currentIndex < tree.view.rowCount-1){
         tree.view.selection.select(tree.currentIndex+1);
