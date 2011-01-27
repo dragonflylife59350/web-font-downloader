@@ -134,6 +134,18 @@ function add_checkbox(treerow){
   return treecell;
 }
 
+function get_format_string(info){
+	switch(info.format){
+		case "woff": return "WOFF (Web Open Font Format)";
+		case "truetype": return "TrueType";
+		case "opentype": return "OpenType";
+		case "truetype-aat": return "TrueType with Apple Advanced Typography extensions";
+		case "embedded-opentype": return "Embedded OpenType";
+		case "svg": return "SVG Font";
+		default: return "Unknown";
+	}
+}
+
 function add_font_item(info){
   var treeitem = document.createElementNS(XUL_NS, "treeitem");
   var treerow = document.createElementNS(XUL_NS, "treerow");
@@ -142,7 +154,7 @@ function add_font_item(info){
   var cell = add_treecell(treerow, info.fontfamily);
   cell.style.fontFamily = info.fontfamily;
   add_treecell(treerow, info.url);
-  add_treecell(treerow, info.format);
+  add_treecell(treerow, get_format_string(info));
   add_treecell(treerow, info.fontfamily);
 
   treeitem.appendChild(treerow);

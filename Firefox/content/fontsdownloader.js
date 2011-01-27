@@ -139,6 +139,14 @@ var FontsDownloader = {
 							"fontfamily": fontfamily
 						};
 
+						if (!font_info.format){
+							if (url.indexOf(".woff")>=0) font_info.format = "woff";
+							if (url.indexOf(".ttf")>=0) font_info.format = "truetype";
+							if (url.indexOf(".otf")>=0) font_info.format = "opentype";
+							if (url.indexOf(".eot")>=0) font_info.format = "embedded-opentype";
+							if (url.indexOf(".svg")>=0) font_info.format = "svg";
+						}
+
 						if (!detected_fonts[[fontfamily, format]]){
 							detected_fonts[[fontfamily, format]] = font_info;
 							var fmi = FontMenuItem(font_info, FontsDownloader);
