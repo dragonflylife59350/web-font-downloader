@@ -15,6 +15,7 @@ zip web-font-downloader-svn.xpi \
 		skin/webfontdownloader-32x32.png \
 		skin/webfontdownloader-16x16.svg \
 		skin/webfontdownloader-32x32.svg \
+		icon.png \
 		install.rdf \
 		LICENSE.TXT \
 		chrome.manifest
