@@ -145,64 +145,68 @@ var FontsDownloader = {
 
           var fontfamily = rule.style.getPropertyValue("font-family").split("\"")[1];
 
-          var src = rule.style.getPropertyValue("src");
+          var _src = rule.style.getPropertyValue("src");
           var url;
           var format;
 
-          try{
-            format = src.split("format(\"")[1].split("\"")[0];
-          } catch(err){/*ignore*/}
+					let srcs = _src.split(",");
+					for (s in srcs){
+						let src = srcs[s];
+		        try{
+		          format = src.split("format(\"")[1].split("\"")[0];
+		        } catch(err){/*ignore*/}
 
-          try{
-            url = src.split("url(\"")[1].split("\"")[0];
-						if (url.indexOf("base64")<0){
-							url = css_path + url;
-						}
-          } catch(err){/*ignore*/}
+		        try{
+		          url = src.split("url(\"")[1].split("\"")[0];
+							if (url.indexOf("base64")<0){
+								url = css_path + url;
+							}
+		        } catch(err){/*ignore*/}
 
-          try{
-						var font_info = {
-							"url": url,
-							"format": format,
-							"format_suffix": "webfont",
-							"fontfamily": fontfamily
-						};
+		        try{
+							var font_info = {
+								"url": url,
+								"format": format,
+								"format_suffix": "webfont",
+								"fontfamily": fontfamily
+							};
 
-						if (!font_info.format){
-							if (url.indexOf(".woff")>=0){
-								font_info.format = "woff";
-								font_info.format_suffix = "woff";
+							if (!font_info.format){
+								if (url.indexOf(".woff")>=0){
+									font_info.format = "woff";
+									font_info.format_suffix = "woff";
+								}
+								if (url.indexOf(".ttf")>=0){
+									font_info.format = "truetype";
+									font_info.format_suffix = "ttf";
+								}
+								if (url.indexOf(".otf")>=0){
+									font_info.format = "opentype";
+									font_info.format_suffix = "otf";
+								}
+								if (url.indexOf(".eot")>=0){
+									font_info.format = "embedded-opentype";
+									font_info.format_suffix = "eot";
+								}
+								if (url.indexOf(".svg")>=0){
+									font_info.format = "svg";
+									font_info.format_suffix = "svg";
+								}
 							}
-							if (url.indexOf(".ttf")>=0){
-								font_info.format = "truetype";
-								font_info.format_suffix = "ttf";
-							}
-							if (url.indexOf(".otf")>=0){
-								font_info.format = "opentype";
-								font_info.format_suffix = "otf";
-							}
-							if (url.indexOf(".eot")>=0){
-								font_info.format = "embedded-opentype";
-								font_info.format_suffix = "eot";
-							}
-							if (url.indexOf(".svg")>=0){
-								font_info.format = "svg";
-								font_info.format_suffix = "svg";
-							}
-						}
 
-						font_info["filename"] = fontfamily + "." + font_info.format_suffix;
-						//do we need to sanitize the filename?
-            //font_info["filename"] = font_info["filename"].replace( new RegExp( " ", "g" ), "_" )
+							font_info["filename"] = fontfamily + "." + font_info.format_suffix;
+							//do we need to sanitize the filename?
+		          //font_info["filename"] = font_info["filename"].replace( new RegExp( " ", "g" ), "_" )
 
-						if (!detected_fonts[[fontfamily.toLowerCase(), font_info.format]]){
-							detected_fonts[[fontfamily.toLowerCase(), font_info.format]] = font_info;
-							var fmi = FontMenuItem(font_info, FontsDownloader);
-							var bottom = document.getElementById("bottom_of_fonts_list");
-							bottom.parentNode.insertBefore(fmi, bottom);
-						}
-          } catch(err){/*ignore*/}
-        } 
+							if (!detected_fonts[[fontfamily.toLowerCase(), font_info.format]]){
+								detected_fonts[[fontfamily.toLowerCase(), font_info.format]] = font_info;
+								var fmi = FontMenuItem(font_info, FontsDownloader);
+								var bottom = document.getElementById("bottom_of_fonts_list");
+								bottom.parentNode.insertBefore(fmi, bottom);
+							}
+            } catch(err){/*ignore*/}
+          }
+        }
       }
     }
   },
