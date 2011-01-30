@@ -199,10 +199,16 @@ for (var i in detected_fonts){
 
 set_preview_text_size(INITIAL_PREVIEW_TEXT_SIZE);
 $("font_size_spinner").value=INITIAL_PREVIEW_TEXT_SIZE;
+$("livepreview-input").onkeyup = function (e){
+	window.user_defined_text = this.value;
+}
 
 function set_font_preview_family(family){
   var input = $("livepreview-input")
-  input.value = family;
+	if (window.user_defined_text)
+  	input.value = window.user_defined_text;
+	else
+  	input.value = family;
   input.style.fontFamily = family;
 }
 
