@@ -24,9 +24,11 @@
   <!-- fonte box for selection -->
   <tree flex="5" id="fonts_tree" editable="true" seltype="single" onselect="onSelect(event)">
       <treecols>
-      <treecol id="selector" type="checkbox" editable="true"/>  
+      <treecol id="selector" type="checkbox" editable="true" ignoreincolumnpicker="true"/>
       <treecol id="css_name" label="CSS Name" flex="2"/>
+			<splitter class="tree-splitter"/>
       <treecol id="font_url" label="URL" flex="8"/>
+			<splitter class="tree-splitter"/>
       <treecol id="font_format" label="Format"/>
       <!-- TODO this would be when we can see metadata inside the font file, somehow...  <treecol id="ps_name" label="PS Name" flex="2"/>  -->
     </treecols>
