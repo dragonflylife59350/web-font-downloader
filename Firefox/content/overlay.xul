@@ -8,6 +8,10 @@
   <script type="application/x-javascript" src="chrome://fontsdownloader/content/utils.js"/>
   <script type="application/x-javascript" src="chrome://fontsdownloader/content/fontsdownloader.js"/>
 
+	<popup id="contentAreaContextMenu">
+	  <menuitem id="listfonts_contextmenu" label="Download Web Fonts" hidden="true"/>
+	  <menuitem id="thiswebfont_contextmenu" label="Download this Web Font" />
+	</popup>
 
 	<menupopup id="menu_ToolsPopup">
 		<menuitem label="Web Font Downloader"  insertafter="menu_openAddons" oncommand='window.open("chrome://fontsdownloader/content/configure.xul", "Web Font Downloader Preferences", "chrome,width=500,height=100")'/>

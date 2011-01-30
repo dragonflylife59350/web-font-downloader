@@ -26,6 +26,9 @@ function ask_download(info){
 }
 
 function FontMenuItem(info, downloader){
+	let listfonts = document.getElementById("listfonts_contextmenu");
+	listfonts.hidden = false;
+
 	var nofonts = document.getElementById("nowebfonts");
 	if (nofonts)
 		nofonts.parentNode.removeChild(nofonts);
@@ -53,6 +56,30 @@ function FontMenuItem(info, downloader){
 }
 
 var detected_fonts = {};
+function OpenFontSelector(){
+	var w = window.open("chrome://fontsdownloader/content/fontselector.xul", "Web Font Downloader", "chrome,width=720,height=720");
+	w.detected_fonts = detected_fonts;
+}
+
+function WebFontsShowHideItems(event){
+	let thiswebfont = document.getElementById("thiswebfont_contextmenu");
+	let style = window.getComputedStyle(document.popupNode, null);
+	let families = style.getPropertyValue("font-family").split(",");
+	let formats = ["woff", "opentype", "embedded-opentype", "truetype", "svg"];
+
+	for (fa in families){
+		for (fo in formats){
+			let info = detected_fonts[[families[fa].toLowerCase(),formats[fo]]];
+			if (info){
+				thiswebfont.onclick = function(){ ask_download(info); };
+				thiswebfont.hidden = false;
+				return;
+			}
+		}
+	}
+	thiswebfont.hidden = true;
+}
+
 var FontsDownloader = {
   init : function () {
 		Components.utils.import("resource://gre/modules/ctypes.jsm")
@@ -62,7 +89,12 @@ var FontsDownloader = {
       appcontent.addEventListener("DOMContentLoaded", FontsDownloader.onPageLoad, true);
 
       FontsDownloader.create_fonts_dir();
-      document.getElementById("listfonts").addEventListener("click", function(){ var w = window.open("chrome://fontsdownloader/content/fontselector.xul", "Web Font Downloader", "chrome,width=720,height=720"); w.detected_fonts = detected_fonts; }, false);
+      document.getElementById("listfonts").addEventListener("click", OpenFontSelector, false);
+      document.getElementById("listfonts_contextmenu").addEventListener("click", OpenFontSelector, false);
+
+			var contextMenu = document.getElementById("contentAreaContextMenu");
+			if (contextMenu)
+    		contextMenu.addEventListener("popupshowing", WebFontsShowHideItems, false);
   },
 
   create_fonts_dir : function (){
@@ -112,6 +144,7 @@ var FontsDownloader = {
           css_path = css_path.join("/") + "/";
 
           var fontfamily = rule.style.getPropertyValue("font-family").split("\"")[1];
+
           var src = rule.style.getPropertyValue("src");
           var url;
           var format;
@@ -162,8 +195,8 @@ var FontsDownloader = {
 						//do we need to sanitize the filename?
             //font_info["filename"] = font_info["filename"].replace( new RegExp( " ", "g" ), "_" )
 
-						if (!detected_fonts[[fontfamily, format]]){
-							detected_fonts[[fontfamily, format]] = font_info;
+						if (!detected_fonts[[fontfamily.toLowerCase(), font_info.format]]){
+							detected_fonts[[fontfamily.toLowerCase(), font_info.format]] = font_info;
 							var fmi = FontMenuItem(font_info, FontsDownloader);
 							var bottom = document.getElementById("bottom_of_fonts_list");
 							bottom.parentNode.insertBefore(fmi, bottom);
