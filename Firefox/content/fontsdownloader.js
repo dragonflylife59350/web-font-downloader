@@ -128,24 +128,39 @@ var FontsDownloader = {
           } catch(err){/*ignore*/}
 
           try{
-						var filename = fontfamily;
-            //filename = filename.replace( new RegExp( " ", "g" ), "_" )  //do we need to sanitize?
-            //filename += "." + FONT_FORMAT_EXTENSION;
-
 						var font_info = {
 							"url": url,
-							"filename": filename,
 							"format": format,
+							"format_suffix": "webfont",
 							"fontfamily": fontfamily
 						};
 
 						if (!font_info.format){
-							if (url.indexOf(".woff")>=0) font_info.format = "woff";
-							if (url.indexOf(".ttf")>=0) font_info.format = "truetype";
-							if (url.indexOf(".otf")>=0) font_info.format = "opentype";
-							if (url.indexOf(".eot")>=0) font_info.format = "embedded-opentype";
-							if (url.indexOf(".svg")>=0) font_info.format = "svg";
+							if (url.indexOf(".woff")>=0){
+								font_info.format = "woff";
+								font_info.format_suffix = "woff";
+							}
+							if (url.indexOf(".ttf")>=0){
+								font_info.format = "truetype";
+								font_info.format_suffix = "ttf";
+							}
+							if (url.indexOf(".otf")>=0){
+								font_info.format = "opentype";
+								font_info.format_suffix = "otf";
+							}
+							if (url.indexOf(".eot")>=0){
+								font_info.format = "embedded-opentype";
+								font_info.format_suffix = "eot";
+							}
+							if (url.indexOf(".svg")>=0){
+								font_info.format = "svg";
+								font_info.format_suffix = "svg";
+							}
 						}
+
+						font_info["filename"] = fontfamily + "." + font_info.format_suffix;
+						//do we need to sanitize the filename?
+            //font_info["filename"] = font_info["filename"].replace( new RegExp( " ", "g" ), "_" )
 
 						if (!detected_fonts[[fontfamily, format]]){
 							detected_fonts[[fontfamily, format]] = font_info;
