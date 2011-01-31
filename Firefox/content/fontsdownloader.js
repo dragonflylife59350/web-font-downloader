@@ -126,6 +126,27 @@ var FontsDownloader = {
     wbp.saveURI(uri, null, null, null, null, file);
   },
 
+  suffix_for_format: function (f) {
+    switch(f){
+      case "woff": return "woff";
+      case "truetype":
+      case "truetype-aat": return "ttf";
+      case "opentype": return "otf";
+      case "embedded-opentype": return "eot";
+      case "svg": return "svg";
+      default:
+        return "webfont";
+    }
+  },
+
+  guess_format_from_url: function (url) {
+		if (url.indexOf(".woff")>=0) return "woff";
+		if (url.indexOf(".ttf")>=0) return "truetype";
+		if (url.indexOf(".otf")>=0) return "opentype";
+		if (url.indexOf(".eot")>=0) return "embedded-opentype";
+		if (url.indexOf(".svg")>=0) return "svg";
+  },
+
   onPageLoad: function (aEvent) {
     var doc = aEvent.originalTarget;	
 
@@ -164,35 +185,7 @@ var FontsDownloader = {
 		        } catch(err){/*ignore*/}
 
 		        try{
-							var font_info = {
-								"url": url,
-								"format": format,
-								"format_suffix": "webfont",
-								"fontfamily": fontfamily
-							};
-
-							if (!font_info.format){
-								if (url.indexOf(".woff")>=0){
-									font_info.format = "woff";
-									font_info.format_suffix = "woff";
-								}
-								if (url.indexOf(".ttf")>=0){
-									font_info.format = "truetype";
-									font_info.format_suffix = "ttf";
-								}
-								if (url.indexOf(".otf")>=0){
-									font_info.format = "opentype";
-									font_info.format_suffix = "otf";
-								}
-								if (url.indexOf(".eot")>=0){
-									font_info.format = "embedded-opentype";
-									font_info.format_suffix = "eot";
-								}
-								if (url.indexOf(".svg")>=0){
-									font_info.format = "svg";
-									font_info.format_suffix = "svg";
-								}
-							}
+							if (!format) format = FontsDownloader.guess_format_from_url(url)
 
               let filename = "";
               let original_filename = url;
@@ -206,12 +199,19 @@ var FontsDownloader = {
 
 							filename += original_filename;
 
-              if (original_filename.indexOf(font_info.format_suffix)<0)
-                filename += "." + font_info.format_suffix;
+              if (original_filename.indexOf(FontsDownloader.suffix_for_format(format))<0)
+                filename += "." + FontsDownloader.suffix_for_format(format);
 
-              font_info["filename"] = filename;
 							//do we need to sanitize the filename?
-		          //font_info["filename"] = font_info["filename"].replace( new RegExp( " ", "g" ), "_" )
+		          //filename = filename.replace( new RegExp( " ", "g" ), "_" )
+
+							var font_info = {
+								"url": url,
+								"format": format,
+                "format_suffix": FontsDownloader.suffix_for_format(format),
+								"fontfamily": fontfamily,
+                "filename": filename
+							};
 
 							if (!detected_fonts[fontfamily.toLowerCase()]){
 								detected_fonts[fontfamily.toLowerCase()] = new Array();
