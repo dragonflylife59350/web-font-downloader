@@ -62,6 +62,7 @@ var detected_fonts = {};
 function OpenFontSelector(){
 	var w = window.open("chrome://fontsdownloader/content/fontselector.xul", "Web Font Downloader", "chrome,width=720,height=720");
 	w.detected_fonts = detected_fonts;
+  w.FontsDownloader = FontsDownloader;
 }
 
 function WebFontsShowHideItems(event){

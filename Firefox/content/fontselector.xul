@@ -121,10 +121,20 @@ function add_webfont_stylesheet(info, unique){
 }
 
 function ask_download_many(){ 
-	var whatfont = window.info.url;
+  var tree = document.getElementById("fonts_tree");
+  var tbo = tree.treeBoxObject;
+
 	var reply = confirm("This will copy the selected fonts to your fonts directory.\n\nPlease inspect the fonts to ensure they are free software or you are otherwise legally permitted to use these fonts on your computer. If these are not free software you may not be permitted to do so without paying for a license.");
 	if (reply){
-    FontsDownloader.download_it(window.info)
+    var i=0;
+    for (d in detected_fonts){
+      var variants = detected_fonts[d];
+      for (v in variants){
+        if (tree.view.getCellValue(i++, tbo.columns[0])=="true"){
+          FontsDownloader.download_it(variants[v]);
+        }
+      }
+    }
     window.close();
   }
 }
