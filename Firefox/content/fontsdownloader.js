@@ -18,10 +18,13 @@
  *
  * ***** END LICENSE BLOCK ***** */
 
-function ask_download(info){
-  var reply = confirm("This will copy " + info.fontfamily + " to your fonts directory.\n\nPlease inspect the font to ensure it is free software or you are otherwise legally permitted to use this font on your computer. If it is not free software you may not be permitted to do so without paying for a license.");
+function ask_download(variants){
+  let info = variants[0];
+  let reply = confirm("This will copy " + info.fontfamily + " to your fonts directory.\n\nPlease inspect the font to ensure it is free software or you are otherwise legally permitted to use this font on your computer. If it is not free software you may not be permitted to do so without paying for a license.");
   if (reply){
-    FontsDownloader.download_it(info)
+    for (let v in variants){
+      FontsDownloader.download_it(variants[v])
+    }
   }
 }
 
@@ -45,7 +48,7 @@ function FontMenuItem(info, downloader){
 
   const XUL_NS = "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
   var item = document.createElementNS(XUL_NS, "menuitem");
-	item.addEventListener("click", function(){ ask_download(info); }, false);
+	item.addEventListener("click", function(){ ask_download(detected_fonts[info.fontfamily.toLowerCase()]); }, false);
 
   item.setAttribute("label", info.fontfamily+" AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz");
 	item.setAttribute("style", "font-family: \""+info.fontfamily+"\";");
@@ -65,16 +68,13 @@ function WebFontsShowHideItems(event){
 	let thiswebfont = document.getElementById("thiswebfont_contextmenu");
 	let style = window.getComputedStyle(document.popupNode, null);
 	let families = style.getPropertyValue("font-family").split(",");
-	let formats = ["woff", "opentype", "embedded-opentype", "truetype", "svg"];
 
-	for (fa in families){
-		for (fo in formats){
-			let info = detected_fonts[[families[fa].toLowerCase(),formats[fo]]];
-			if (info){
-				thiswebfont.onclick = function(){ ask_download(info); };
-				thiswebfont.hidden = false;
-				return;
-			}
+	for (let f in families){
+		let variants = detected_fonts[families[f].toLowerCase()];
+		if (variants && variants.length>0){
+			thiswebfont.onclick = function(){ ask_download(variants); };
+			thiswebfont.hidden = false;
+			return;
 		}
 	}
 	thiswebfont.hidden = true;
@@ -194,15 +194,43 @@ var FontsDownloader = {
 								}
 							}
 
-							font_info["filename"] = fontfamily + "." + font_info.format_suffix;
+              let filename = "";
+              let original_filename = url;
+              if (url.indexOf("/")>=0){
+                original_filename = url.split("/");
+                original_filename = original_filename[original_filename.length-1];
+              }
+
+              if (fontfamily.toLowerCase().indexOf(original_filename.toLowerCase())<0)
+                filename += fontfamily + "_";
+
+							filename += original_filename;
+
+              if (original_filename.indexOf(font_info.format_suffix)<0)
+                filename += "." + font_info.format_suffix;
+
+              font_info["filename"] = filename;
 							//do we need to sanitize the filename?
 		          //font_info["filename"] = font_info["filename"].replace( new RegExp( " ", "g" ), "_" )
 
-							if (!detected_fonts[[fontfamily.toLowerCase(), font_info.format]]){
-								detected_fonts[[fontfamily.toLowerCase(), font_info.format]] = font_info;
+							if (!detected_fonts[fontfamily.toLowerCase()]){
+								detected_fonts[fontfamily.toLowerCase()] = new Array();
 								var fmi = FontMenuItem(font_info, FontsDownloader);
 								var bottom = document.getElementById("bottom_of_fonts_list");
 								bottom.parentNode.insertBefore(fmi, bottom);
+              }
+
+              let variants = detected_fonts[fontfamily.toLowerCase()];
+              let found = false;
+							let i;
+              for (i in variants){
+                if (variants[i]==font_info){
+                  found = true;
+                  break;
+                }
+              }
+              if (!found){
+                variants.push(font_info);
 							}
             } catch(err){/*ignore*/}
           }

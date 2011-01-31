@@ -103,17 +103,17 @@ function onSelect(evt){
   var tree = document.getElementById("fonts_tree");
   var tbo = tree.treeBoxObject;
   var family = tree.view.getCellText(tree.currentIndex, tbo.columns[1]);
-  set_font_preview_family(family);
+  set_font_preview_family(family, tree.currentIndex+1);
 }
 
 function set_preview_text_size(v){
   $("livepreview-input").style.fontSize = v+"pt";
 }
 
-function add_webfont_stylesheet(info){
+function add_webfont_stylesheet(info, unique){
   var sheet = document.createElementNS(HTML_NS, "style");
   sheet.setAttribute("type", "text/css");
-  var html = '@font-face { font-family: "'+info.fontfamily+'"; src: url("'+info.url+'")';
+  var html = '@font-face { font-family: "'+info.fontfamily+unique+'"; src: url("'+info.url+'")';
   if (info.format) html += ' format("'+info.format+'")';
   html += '}';
   sheet.innerHTML = html;
@@ -155,13 +155,13 @@ function get_format_string(info){
 	}
 }
 
-function add_font_item(info){
+function add_font_item(info, unique){
   var treeitem = document.createElementNS(XUL_NS, "treeitem");
   var treerow = document.createElementNS(XUL_NS, "treerow");
   
   add_checkbox(treerow);
   var cell = add_treecell(treerow, info.fontfamily);
-  cell.style.fontFamily = info.fontfamily;
+  cell.style.fontFamily = info.fontfamily+unique;
   add_treecell(treerow, info.url);
   add_treecell(treerow, get_format_string(info));
   add_treecell(treerow, info.fontfamily);
@@ -170,33 +170,14 @@ function add_font_item(info){
   document.getElementById("fonts_tree_children").appendChild(treeitem);
 }
 
-/*
-var detected_fonts = [
-  {
-	  "url": "file:///home/felipe/Desktop/bad",
-	  "filename": "",
-	  "format": "woff",
-	  "fontfamily": "BadFont"
+var unique = 1;
+for (d in detected_fonts){
+  var variants = detected_fonts[d];
+  for (v in variants){ 
+    add_webfont_stylesheet(variants[v], unique);
+    add_font_item(variants[v], unique);
+    unique++;
   }
-,  {
-	  "url": "file:///home/felipe/Desktop/MEgalopolis",
-	  "filename": "",
-	  "format": "woff",
-	  "fontfamily": "MEgalopolis"
-  }
-,  {
-	  "url": "file:///home/felipe/Desktop/wrong",
-	  "filename": "",
-	  "format": "woff",
-	  "fontfamily": "WrongFont"
-  }
-];
-*/
-
-for (var i in detected_fonts){
-  var info = detected_fonts[i];
-  add_webfont_stylesheet(info);
-  add_font_item(info);
 }
 
 set_preview_text_size(INITIAL_PREVIEW_TEXT_SIZE);
@@ -205,13 +186,13 @@ $("livepreview-input").onkeyup = function (e){
 	window.user_defined_text = this.value;
 }
 
-function set_font_preview_family(family){
+function set_font_preview_family(family, unique){
   var input = $("livepreview-input")
 	if (window.user_defined_text)
   	input.value = window.user_defined_text;
 	else
   	input.value = family;
-  input.style.fontFamily = family;
+  input.style.fontFamily = family+unique;
 }
 
 ]]></script>
