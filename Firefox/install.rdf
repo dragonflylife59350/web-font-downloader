@@ -7,6 +7,7 @@
 		<em:version>0.2svn</em:version>
 		<em:creator>Felipe Corrêa da Silva Sanches</em:creator>
 		<em:type>2</em:type>
+    <em:optionsURL>chrome://fontsdownloader/content/configure.xul</em:optionsURL>
 
     <em:localized>
       <Description>
