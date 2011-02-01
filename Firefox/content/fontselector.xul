@@ -103,7 +103,12 @@ function onSelect(evt){
   var tree = document.getElementById("fonts_tree");
   var tbo = tree.treeBoxObject;
   var family = tree.view.getCellText(tree.currentIndex, tbo.columns[1]);
-  set_font_preview_family(family, tree.currentIndex+1);
+  var format_str = tree.view.getCellText(tree.currentIndex, tbo.columns[3]);
+  var color = 
+    (format_str==get_format_string("svg") ||
+    format_str==get_format_string("embedded-opentype")) ? "red" : "black";
+
+  update_font_preview(family, color, tree.currentIndex+1);
 }
 
 function set_preview_text_size(v){
@@ -153,8 +158,8 @@ function add_checkbox(treerow){
   return treecell;
 }
 
-function get_format_string(info){
-	switch(info.format){
+function get_format_string(format){
+	switch(format){
 		case "woff": return "WOFF (Web Open Font Format)";
 		case "truetype": return "TrueType";
 		case "opentype": return "OpenType";
@@ -173,7 +178,7 @@ function add_font_item(info, unique){
   var cell = add_treecell(treerow, info.fontfamily);
   cell.style.fontFamily = info.fontfamily+unique;
   add_treecell(treerow, info.url);
-  add_treecell(treerow, get_format_string(info));
+  add_treecell(treerow, get_format_string(info.format));
   add_treecell(treerow, info.fontfamily);
 
   treeitem.appendChild(treerow);
@@ -196,13 +201,14 @@ $("livepreview-input").onkeyup = function (e){
 	window.user_defined_text = this.value;
 }
 
-function set_font_preview_family(family, unique){
+function update_font_preview(family, color, unique){
   var input = $("livepreview-input")
 	if (window.user_defined_text)
   	input.value = window.user_defined_text;
 	else
   	input.value = family;
   input.style.fontFamily = family+unique;
+  input.style.color = color;
 }
 
 ]]></script>
