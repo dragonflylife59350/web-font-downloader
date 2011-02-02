@@ -182,7 +182,7 @@ var FontsDownloader = {
 
 		        try{
 		          url = src.split("url(\"")[1].split("\"")[0];
-							if (url.indexOf("base64")<0){
+							if (url.indexOf("base64")<0 && url.indexOf("http://")<0){
 								url = css_path + url;
 							}
 		        } catch(err){continue;}
