@@ -1,0 +1,12 @@
+treechildren::-moz-tree-checkbox(checked)
+{
+    /* css for checked cells */
+    list-style-image: url("chrome://fontsdownloader/skin/webfontdownloader-16x16.png") !important;
+}
+
+treechildren::-moz-tree-checkbox
+{
+    /* css for checked cells */
+    list-style-image: url("chrome://fontsdownloader/skin/webfontdownloader-16x16-unchecked.png");
+}
+
