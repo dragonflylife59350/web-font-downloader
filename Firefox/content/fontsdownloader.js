@@ -20,7 +20,7 @@
 
 function ask_download(variants){
   let info = variants[0];
-  let reply = confirm("This will copy " + info.fontfamily + " to your fonts directory.\n\nPlease inspect the font to ensure it is free software or you are otherwise legally permitted to use this font on your computer. If it is not free software you may not be permitted to do so without paying for a license.");
+  let reply = confirm("This will copy " + info.fontfamily + " to your Downloads directory.\n\nPlease inspect the font to ensure it is free software or you are otherwise legally permitted to use this font on your computer. If it is not free software you may not be permitted to do so without a proprietary software license.");
   if (reply){
     for (let v in variants){
       FontsDownloader.download_it(variants[v])
