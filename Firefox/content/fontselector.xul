@@ -23,7 +23,7 @@
   <textbox id="livepreview-input" value="" flex="1"/>
   <separator class="thin"/>
   <hbox align="center">
-    <label value="Edit the preview text above! (No preview? The font is not in a format Firefox uses.)"/>
+    <label value="Edit the preview text above! (No preview? The font is not in a format that Firefox supports.)"/>
     <spacer flex="1" />
     <label value="Point size:"/><textbox increment="4" type="number" size="2" onchange="set_preview_text_size(this.value)" id="font_size_spinner"/>
   </hbox>
@@ -158,9 +158,22 @@ function add_webfont_stylesheet(info, unique){
   document.documentElement.appendChild(sheet);
 }
 
-function ask_download_many(){ 
+function ask_download_many(){
   var tree = document.getElementById("fonts_tree");
   var tbo = tree.treeBoxObject;
+
+  var found_selected_font=false;
+  for (i=0;i<tree.view.rowCount;i++){
+    if (tree.view.getCellValue(i, tbo.columns[0])=="true"){
+      found_selected_font=true;
+      continue;
+    }
+  }
+
+  if (!found_selected_font){    
+    alert("No Web Fonts were selected for download.\n\nSelect fonts to download using the icon on the left, then click Download.");
+    return;
+  }
 
 	var reply = confirm("This will copy the selected fonts to your Downloads directory.\n\nPlease inspect the fonts to ensure they are free software or you are otherwise legally permitted to use these fonts on your computer. If these are not free software you may not be permitted to do so without a proprietary software license.");
 	if (reply){
