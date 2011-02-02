@@ -23,7 +23,7 @@
   <textbox id="livepreview-input" value="" flex="1"/>
   <separator class="thin"/>
   <hbox align="center">
-    <label value="Edit the preview text above! (If you see red text, the font is not previewed)"/>
+    <label value="Edit the preview text above! (No preview? The font is not in a format Firefox uses.)"/>
     <spacer flex="1" />
     <label value="Point size:"/><textbox increment="4" type="number" size="2" onchange="set_preview_text_size(this.value)" id="font_size_spinner"/>
   </hbox>
@@ -116,7 +116,7 @@ function onSelect(evt){
   var format_str = tree.view.getCellText(tree.currentIndex, tbo.columns[2]);
   var color = 
     (format_str==get_format_string("svg") ||
-    format_str==get_format_string("embedded-opentype")) ? "red" : "black";
+    format_str==get_format_string("embedded-opentype")) ? "white" : "black";
 
   update_font_preview(family, color, tree.currentIndex+1);
 }
