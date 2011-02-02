@@ -39,9 +39,9 @@
 			<splitter class="tree-splitter"/>
       <treecol id="font_format" label="Format"/>
       			<splitter class="tree-splitter"/>
-      <treecol id="font_url" label="URL" flex="8"/>
+      <treecol id="font_url" label="Font URL" flex="8"/>
 			<splitter class="tree-splitter"/>
-      <treecol id="from_page" label="Used in Website" flex="8"/>
+      <treecol id="from_page" label="Page URL" flex="8"/>
 			<splitter class="tree-splitter"/>
       <!-- TODO this would be when we can see metadata inside the font file, somehow...  <treecol id="ps_name" label="PS Name" flex="2"/>  -->
     </treecols>
