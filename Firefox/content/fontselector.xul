@@ -1,0 +1,256 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<?xml-stylesheet href="../skin/fontselector.css" type="text/css"?>
+
+<window
+    id="fontselector-window"
+    title="Web Font Downloader"
+    xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+    xmlns:html="http://www.w3.org/1999/xhtml"
+    onload="onWindowLoad(event)"
+    >
+
+	<keyset>
+		<key modifiers="control" key="S" oncommand="ask_download_many();"/>
+
+<!-- why doesnt these (enter, up and down) work when we focus the text_preview widget? -->
+		<key key="VK_ENTER" oncommand="ask_download_many();"/>
+		<key key="VK_UP" oncommand="font_list_go_up();"/>
+		<key key="VK_DOWN" oncommand="font_list_go_down();"/>
+	</keyset>
+
+  <hbox align="center">
+    <box/>
+      <label flex="1" value="Select fonts to download using the icon on the left, then click Download."/><label class="text-link" value="webfontdownload.org" onclick="var win = Components.classes['@mozilla.org/appshell/window-mediator;1'].getService(Components.interfaces.nsIWindowMediator).getMostRecentWindow('navigator:browser'); win.openUILinkIn('http://webfontdownload.org', 'tab');"/>
+      <button icon="select-font" align="center" oncommand='window.open("chrome://fontsdownloader/content/configure.xul", "Web Font Downloader Preferences", "chrome,width=500,height=100")' label="Preferences"/>
+    <box/>
+  </hbox>
+    
+  <!-- fonte box for selection -->
+  <tree flex="5" id="fonts_tree" editable="true" seltype="single" onselect="onSelect(event)">
+      <treecols>
+      <treecol id="selector" class="treecol-image" src='chrome://fontsdownloader/skin/webfontdownloader-16x16.png' type="checkbox" editable="true" ignoreincolumnpicker="true"/>
+      <treecol id="css_name" label="CSS Name" flex="2"/>
+			<splitter class="tree-splitter"/>
+      <treecol id="font_url" label="URL" flex="8"/>
+			<splitter class="tree-splitter"/>
+      <treecol id="from_page" label="Used in Website" flex="8"/>
+			<splitter class="tree-splitter"/>
+      <treecol id="font_format" label="Format"/>
+      <!-- TODO this would be when we can see metadata inside the font file, somehow...  <treecol id="ps_name" label="PS Name" flex="2"/>  -->
+    </treecols>
+
+    <treechildren id="fonts_tree_children">
+    </treechildren>
+  </tree>
+
+  <splitter/>
+  <vbox>
+
+  <separator class="thin"/>
+  <hbox align="center">
+    <label value="Edit the preview text below! (If you see red text, the font is not previewed)"/>
+    <spacer flex="1" />
+  </hbox>
+  
+  <textbox id="livepreview-input" value="" flex="1"/>
+  </vbox>
+
+  <hbox align="center">
+    <label value="Point size:"/><textbox increment="4" type="number" size="2" onchange="set_preview_text_size(this.value)" id="font_size_spinner"/>
+    <spacer flex="1" />
+    <button icon="cancel" align="center" oncommand="window.close();" label="Cancel"/>
+    <button icon="save" align="center" oncommand="ask_download_many();" label="Download"/>
+  </hbox>
+
+  <script><![CDATA[
+const HTML_NS = "http://www.w3.org/1999/xhtml";
+const XUL_NS="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
+window.$ = function(id) { return document.getElementById(id); };
+INITIAL_PREVIEW_TEXT_SIZE=72;
+
+function toggle_download_checkbox(){
+  var tree = document.getElementById("fonts_tree");
+  var tbo = tree.treeBoxObject;
+  var value = tree.view.getCellValue(tree.currentIndex, tbo.columns[0]);
+  tree.view.setCellValue(tree.currentIndex, tbo.columns[0], value=="false");
+}
+
+function font_list_go_up(){
+  var tree = document.getElementById("fonts_tree");
+  if (tree.currentIndex>0){
+    tree.view.selection.select(tree.currentIndex-1);
+  }
+}
+
+function font_list_go_down(){
+  var tree = document.getElementById("fonts_tree");
+  if (tree.currentIndex < tree.view.rowCount-1){
+    tree.view.selection.select(tree.currentIndex+1);
+  }
+}
+
+function keyDown(event){
+  const H_KEY=72, L_KEY=76, SPACEBAR=32, ENTER_KEY=0x0d;
+  
+  switch(event.which){
+    case ENTER_KEY:
+			ask_download_many();
+			break;
+    case SPACEBAR:
+      toggle_download_checkbox();
+	    break;
+    case L_KEY:
+      font_list_go_down();
+	    break;
+    case H_KEY:
+      font_list_go_up();
+	    break;
+	}
+	return true;
+}
+
+function onWindowLoad(evt){
+  fout_hack();
+}
+
+function onSelect(evt){
+  var tree = document.getElementById("fonts_tree");
+  var tbo = tree.treeBoxObject;
+  var family = tree.view.getCellText(tree.currentIndex, tbo.columns[1]);
+  var format_str = tree.view.getCellText(tree.currentIndex, tbo.columns[4]);
+  var color = 
+    (format_str==get_format_string("svg") ||
+    format_str==get_format_string("embedded-opentype")) ? "red" : "black";
+
+  update_font_preview(family, color, tree.currentIndex+1);
+}
+
+var fout=0;
+function fout_hack(){
+  var tree = document.getElementById("fonts_tree");
+  var tbo = tree.treeBoxObject;
+  var input = $("livepreview-input")
+  input.style.color = "white";
+  var family = tree.view.getCellText(fout, tbo.columns[1]);
+  input.style.fontFamily = family+(fout+1);
+  
+  if (fout<tree.view.rowCount-1){
+    fout++;
+    window.setTimeout(fout_hack, 1);
+  } else {
+    window.setTimeout(function(){
+      //auto-select first row:
+      var tree = document.getElementById("fonts_tree");
+      tree.view.selection.select(0);
+      tree.focus();
+      tree.onkeydown = keyDown;
+    }, 1);
+  }
+}
+
+function set_preview_text_size(v){
+  $("livepreview-input").style.fontSize = v+"pt";
+}
+
+function add_webfont_stylesheet(info, unique){
+  var sheet = document.createElementNS(HTML_NS, "style");
+  sheet.setAttribute("type", "text/css");
+  var html = '@font-face { font-family: "'+info.fontfamily+unique+'"; src: url("'+info.url+'")';
+  if (info.format) html += ' format("'+info.format+'")';
+  html += '}';
+  sheet.innerHTML = html;
+  document.documentElement.appendChild(sheet);
+}
+
+function ask_download_many(){ 
+  var tree = document.getElementById("fonts_tree");
+  var tbo = tree.treeBoxObject;
+
+	var reply = confirm("This will copy the selected fonts to your Downloads directory.\n\nPlease inspect the fonts to ensure they are free software or you are otherwise legally permitted to use these fonts on your computer. If these are not free software you may not be permitted to do so without a proprietary software license.");
+	if (reply){
+    var i=0;
+    for (d in detected_fonts){
+      var variants = detected_fonts[d];
+      for (v in variants){
+        if (tree.view.getCellValue(i++, tbo.columns[0])=="true"){
+          FontsDownloader.download_it(variants[v]);
+        }
+      }
+    }
+// "When pressing download, the window should not close."
+// http://code.google.com/p/web-font-downloader/issues/detail?id=10
+//    window.close();
+  }
+}
+
+function add_treecell(treerow, label){
+  var treecell = document.createElementNS(XUL_NS, "treecell");
+  treecell.setAttribute("label", label);
+  treerow.appendChild(treecell);
+  return treecell;
+}
+
+function add_checkbox(treerow){
+  var treecell = document.createElementNS(XUL_NS, "treecell");
+  treecell.setAttribute("value", "false");
+  treerow.appendChild(treecell);
+  return treecell;
+}
+
+function get_format_string(format){
+	switch(format){
+		case "woff": return "WOFF";
+		case "truetype": return "TTF";
+		case "opentype": return "OTF";
+		case "truetype-aat": return "AAT";
+		case "embedded-opentype": return "EOT";
+		case "svg": return "SVG";
+		default: return "Unknown";
+	}
+}
+
+function add_font_item(info, unique){
+  var treeitem = document.createElementNS(XUL_NS, "treeitem");
+  var treerow = document.createElementNS(XUL_NS, "treerow");
+  
+  add_checkbox(treerow);
+  var cell = add_treecell(treerow, info.fontfamily);
+  cell.style.fontFamily = info.fontfamily+unique;
+  add_treecell(treerow, info.url);
+  add_treecell(treerow, info["from_page"]);
+  add_treecell(treerow, get_format_string(info.format));
+  add_treecell(treerow, info.fontfamily);
+
+  treeitem.appendChild(treerow);
+  document.getElementById("fonts_tree_children").appendChild(treeitem);
+}
+
+var unique = 1;
+for (d in detected_fonts){
+  var variants = detected_fonts[d];
+  for (v in variants){ 
+    add_webfont_stylesheet(variants[v], unique);
+    add_font_item(variants[v], unique);
+    unique++;
+  }
+}
+
+set_preview_text_size(INITIAL_PREVIEW_TEXT_SIZE);
+$("font_size_spinner").value=INITIAL_PREVIEW_TEXT_SIZE;
+$("livepreview-input").onkeyup = function (e){
+	window.user_defined_text = this.value;
+}
+
+function update_font_preview(family, color, unique){
+  var input = $("livepreview-input")
+	if (window.user_defined_text)
+  	input.value = window.user_defined_text;
+	else
+  	input.value = family;
+  input.style.fontFamily = family+unique;
+  input.style.color = color;
+}
+
+]]></script>
+</window>

@@ -1,0 +1,3 @@
+content fontsdownloader     content/ contentaccessible=yes
+skin    fontsdownloader     default     skin/
+overlay chrome://browser/content/browser.xul chrome://fontsdownloader/content/overlay.xul
