@@ -170,8 +170,8 @@ var FontsDownloader = {
           var fontfamily = rule.style.getPropertyValue("font-family").split("\"")[1];
 
           var _src = rule.style.getPropertyValue("src");
-          var url;
-          var format;
+          var url = undefined;
+          var format = undefined;
 
 					let srcs = _src.split(",");
 					for (s in srcs){
