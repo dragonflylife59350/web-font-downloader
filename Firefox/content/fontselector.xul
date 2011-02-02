@@ -158,7 +158,9 @@ function ask_download_many(){
         }
       }
     }
-    window.close();
+// "When pressing download, the window should not close."
+// http://code.google.com/p/web-font-downloader/issues/detail?id=10
+//    window.close();
   }
 }
 
