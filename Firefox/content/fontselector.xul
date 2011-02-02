@@ -23,7 +23,7 @@
   <textbox id="livepreview-input" value="" flex="1"/>
   <separator class="thin"/>
   <hbox align="center">
-    <label value="Edit the preview text above! (No preview? The font is not in a format that Firefox supports.)"/>
+    <label value="Edit the preview text above! (No preview? Unsupported Web Font format.)"/>
     <spacer flex="1" />
     <label value="Point size:"/><textbox increment="4" type="number" size="2" onchange="set_preview_text_size(this.value)" id="font_size_spinner"/>
   </hbox>
