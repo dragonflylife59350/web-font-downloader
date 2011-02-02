@@ -60,6 +60,7 @@ function FontMenuItem(info, downloader){
   return item;
 }
 
+var unique_counter=1;
 var detected_fonts = {};
 var fontselector;
 function OpenFontSelector(){
@@ -219,7 +220,8 @@ var FontsDownloader = {
                 "format_suffix": FontsDownloader.suffix_for_format(format),
 								"fontfamily": fontfamily,
                 "filename": filename,
-                "from_page": doc.location
+                "from_page": doc.location,
+                "unique_id": "webfontdownloader_"+(unique_counter++)
 							};
 
               add_fontface_rule(font_info);

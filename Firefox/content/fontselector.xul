@@ -117,7 +117,7 @@ function onSelect(evt){
   var color = 
     (info.format=="svg" || info.format=="embedded-opentype") ? "white" : "black";
 
-  update_font_preview(info.fontfamily, color, tree.currentIndex+1);
+  update_font_preview(info, color);
 }
 
 var fout=0;
@@ -126,8 +126,8 @@ function fout_hack(){
   var tbo = tree.treeBoxObject;
   var input = $("livepreview-input")
   input.style.color = "white";
-  var family = tree.view.getCellText(fout, tbo.columns[1]);
-  input.style.fontFamily = family+(fout+1);
+  var info = tree.view.getCellText(fout, tbo.columns[0]);
+  input.style.fontFamily = info["unique_id"];
   
   if (fout<tree.view.rowCount-1){
     fout++;
@@ -147,10 +147,10 @@ function set_preview_text_size(v){
   $("livepreview-input").style.fontSize = v+"pt";
 }
 
-function add_webfont_stylesheet(info, unique){
+function add_webfont_stylesheet(info){
   var sheet = document.createElementNS(HTML_NS, "style");
   sheet.setAttribute("type", "text/css");
-  var html = '@font-face { font-family: "'+info.fontfamily+unique+'"; src: url("'+info.url+'")';
+  var html = '@font-face { font-family: "'+info["unique_id"]+'"; src: url("'+info.url+'")';
   if (info.format) html += ' format("'+info.format+'")';
   html += '}';
   sheet.innerHTML = html;
@@ -217,14 +217,14 @@ function get_format_string(format){
 	}
 }
 
-function add_font_item(info, unique){
+function add_font_item(info){
   var treeitem = document.createElementNS(XUL_NS, "treeitem");
   var treerow = document.createElementNS(XUL_NS, "treerow");
 
   add_treecell(treerow, info.toSource());
   add_checkbox(treerow);
   var cell = add_treecell(treerow, info.fontfamily);
-  cell.style.fontFamily = info.fontfamily+unique;
+  cell.style.fontFamily = info["unique_id"];
   add_treecell(treerow, get_format_string(info.format));
   add_treecell(treerow, info.url);
   add_treecell(treerow, info["from_page"]);
@@ -233,13 +233,11 @@ function add_font_item(info, unique){
   document.getElementById("fonts_tree_children").appendChild(treeitem);
 }
 
-var unique = 1;
 for (d in detected_fonts){
   var variants = detected_fonts[d];
   for (v in variants){ 
-    add_webfont_stylesheet(variants[v], unique);
-    add_font_item(variants[v], unique);
-    unique++;
+    add_webfont_stylesheet(variants[v]);
+    add_font_item(variants[v]);
   }
 }
 
@@ -249,13 +247,13 @@ $("livepreview-input").onkeyup = function (e){
 	window.user_defined_text = this.value;
 }
 
-function update_font_preview(family, color, unique){
+function update_font_preview(info, color){
   var input = $("livepreview-input")
 	if (window.user_defined_text)
   	input.value = window.user_defined_text;
 	else
-  	input.value = family;
-  input.style.fontFamily = family+unique;
+  	input.value = info.fontfamily;
+  input.style.fontFamily = info["unique_id"];
   input.style.color = color;
 }
 
