@@ -24,9 +24,10 @@
       <menupopup id="webfonts-popup">
       	<menuitem label="Download multiple fonts..." id="listfonts"/>
         <menuseparator/>
+      	<menuitem label="Single click to download the family:"/>
       	<menuitem label="No webfonts detected." id="nowebfonts"/>
       	<menuseparator id="bottom_of_fonts_list"/>
-      	<menuitem label="Learn more..." class="link" oncommand="var win = Components.classes['@mozilla.org/appshell/window-mediator;1'].getService(Components.interfaces.nsIWindowMediator).getMostRecentWindow('navigator:browser'); win.openUILinkIn('http://webfontdownload.org', 'tab');"/>
+      	<menuitem label="Visit webfontdownload.org" class="link" oncommand="var win = Components.classes['@mozilla.org/appshell/window-mediator;1'].getService(Components.interfaces.nsIWindowMediator).getMostRecentWindow('navigator:browser'); win.openUILinkIn('http://webfontdownload.org', 'tab');"/>
       </menupopup>
     </statusbarpanel>
   </statusbar>
