@@ -183,7 +183,7 @@ var FontsDownloader = {
 							if (url.indexOf("base64")<0){
 								url = css_path + url;
 							}
-		        } catch(err){/*ignore*/}
+		        } catch(err){continue;}
 
 		        try{
 							if (!format) format = FontsDownloader.guess_format_from_url(url)
