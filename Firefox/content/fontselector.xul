@@ -34,6 +34,8 @@
 			<splitter class="tree-splitter"/>
       <treecol id="font_url" label="URL" flex="8"/>
 			<splitter class="tree-splitter"/>
+      <treecol id="from_page" label="Used in Website" flex="8"/>
+			<splitter class="tree-splitter"/>
       <treecol id="font_format" label="Format"/>
       <!-- TODO this would be when we can see metadata inside the font file, somehow...  <treecol id="ps_name" label="PS Name" flex="2"/>  -->
     </treecols>
@@ -121,7 +123,7 @@ function onSelect(evt){
   var tree = document.getElementById("fonts_tree");
   var tbo = tree.treeBoxObject;
   var family = tree.view.getCellText(tree.currentIndex, tbo.columns[1]);
-  var format_str = tree.view.getCellText(tree.currentIndex, tbo.columns[3]);
+  var format_str = tree.view.getCellText(tree.currentIndex, tbo.columns[4]);
   var color = 
     (format_str==get_format_string("svg") ||
     format_str==get_format_string("embedded-opentype")) ? "red" : "black";
@@ -198,6 +200,7 @@ function add_font_item(info, unique){
   var cell = add_treecell(treerow, info.fontfamily);
   cell.style.fontFamily = info.fontfamily+unique;
   add_treecell(treerow, info.url);
+  add_treecell(treerow, info["from_page"]);
   add_treecell(treerow, get_format_string(info.format));
   add_treecell(treerow, info.fontfamily);
 

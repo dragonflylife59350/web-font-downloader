@@ -211,7 +211,8 @@ var FontsDownloader = {
 								"format": format,
                 "format_suffix": FontsDownloader.suffix_for_format(format),
 								"fontfamily": fontfamily,
-                "filename": filename
+                "filename": filename,
+                "from_page": doc.location
 							};
 
 							if (!detected_fonts[fontfamily.toLowerCase()]){
