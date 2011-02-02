@@ -9,7 +9,7 @@
   <script type="application/x-javascript" src="chrome://fontsdownloader/content/fontsdownloader.js"/>
 
 	<popup id="contentAreaContextMenu">
-	  <menuitem id="listfonts_contextmenu" label="List Web Fonts" hidden="true"/>
+	  <menuitem id="listfonts_contextmenu" label="Download multiple Web Fonts" hidden="true"/>
 	  <menuitem id="thiswebfont_contextmenu" label="Download this Web Font" />
 	</popup>
 
@@ -22,10 +22,10 @@
       <image id="StatusIcon" />
 
       <menupopup id="webfonts-popup">
-      	<menuitem label="Download multiple fonts..." id="listfonts"/>
+      	<menuitem label="Download multiple Web Fonts..." id="listfonts"/>
         <menuseparator/>
-      	<menuitem label="Single click to download the family:"/>
-      	<menuitem label="No webfonts detected." id="nowebfonts"/>
+      	<menuitem label="Single click to download a family:"/>
+      	<menuitem label="No Web Fonts seen yet!" id="nowebfonts"/>
       	<menuseparator id="bottom_of_fonts_list"/>
       	<menuitem label="Visit webfontdownload.org" class="link" oncommand="var win = Components.classes['@mozilla.org/appshell/window-mediator;1'].getService(Components.interfaces.nsIWindowMediator).getMostRecentWindow('navigator:browser'); win.openUILinkIn('http://webfontdownload.org', 'tab');"/>
       </menupopup>
