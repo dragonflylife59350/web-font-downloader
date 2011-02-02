@@ -69,6 +69,7 @@ function OpenFontSelector(){
     return;
   }
 	fontselector = window.open("chrome://fontsdownloader/content/fontselector.xul", "Web Font Downloader", "chrome,width=720,height=720");
+  fontselector.addEventListener("close", function(){ fontselector = undefined; }, false);
 	fontselector.detected_fonts = detected_fonts;
   fontselector.FontsDownloader = FontsDownloader;
 }
