@@ -28,14 +28,7 @@ function ask_download(variants){
   }
 }
 
-function FontMenuItem(info, downloader){
-	let listfonts = document.getElementById("listfonts_contextmenu");
-	listfonts.hidden = false;
-
-	var nofonts = document.getElementById("nowebfonts");
-	if (nofonts)
-		nofonts.parentNode.removeChild(nofonts);
-
+function add_fontface_rule(info){
 	//preview the webfont in the fonts list menuitem
 	const HTML_NS = "http://www.w3.org/1999/xhtml";
 	var sheet = document.createElementNS(HTML_NS, "style");
@@ -45,6 +38,15 @@ function FontMenuItem(info, downloader){
   if(statusbar && statusbar.parentNode){
 		statusbar.parentNode.appendChild(sheet);
 	}
+}
+
+function FontMenuItem(info, downloader){
+	let listfonts = document.getElementById("listfonts_contextmenu");
+	listfonts.hidden = false;
+
+	var nofonts = document.getElementById("nowebfonts");
+	if (nofonts)
+		nofonts.parentNode.removeChild(nofonts);
 
   const XUL_NS = "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
   var item = document.createElementNS(XUL_NS, "menuitem");
@@ -214,6 +216,8 @@ var FontsDownloader = {
                 "filename": filename,
                 "from_page": doc.location
 							};
+
+              add_fontface_rule(font_info);
 
 							if (!detected_fonts[fontfamily.toLowerCase()]){
 								detected_fonts[fontfamily.toLowerCase()] = new Array();
