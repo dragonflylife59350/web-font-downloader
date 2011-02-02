@@ -1,7 +1,7 @@
 /* ***** BEGIN LICENSE BLOCK *****
  *  Web Font Downloader, a Firefox Extension for downloading libre web fonts
- *  Copyright (C) 2010 Felipe C. da S. Sanches <jucablues@users.sourceforge.net>
- *  Copyright (C) 2010 Understanding Limited <dave@understandingfonts.com>
+ *  Copyright (C) 2011 Felipe C. da S. Sanches <juca@members.fsf.org>
+ *  Copyright (C) 2011 Understanding Limited <dave@understandingfonts.com>
  *
  *  This program is free software: you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
