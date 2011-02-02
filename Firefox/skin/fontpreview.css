@@ -1,0 +1,47 @@
+.metadata_attr {
+	font-weight: bold;
+	text-align: right;
+}
+
+.preview {
+  padding: 10px 15px;
+  -moz-border-radius: 10px;
+  -moz-box-shadow: 3px 3px 8px rgba(0,0,0,0.2);
+}
+
+#preview-in-black {
+  background: black;
+  color: white;
+}
+
+#preview-in-white {
+  Xmargin-top: 12px;
+  background: white;
+  color: black;
+}
+
+#livepreview-box {
+  background: white;  
+}
+
+.livepreview {
+  padding: 10px 15px;
+  color: black;  
+}
+
+#livepreview-12px { font-size:12px; }
+#livepreview-16px { font-size:16px; }
+#livepreview-22px { font-size:22px; }
+#livepreview-28px { font-size:28px; }
+#livepreview-34px { font-size:34px; }
+#livepreview-42px { font-size:42px; }
+#livepreview-50px { font-size:50px; }
+
+row {
+  padding: 10px 0px;
+}
+
+.link {
+  color: blue;
+  text-decoration: underline;
+}

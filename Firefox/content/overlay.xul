@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://fontsdownloader/skin/statusbarOverlay.css"?>
+
+<overlay
+	id="fontsdownloaderOverlay"
+  xmlns:html="http://www.w3.org/1999/xhtml"
+	xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+  <script type="application/x-javascript" src="chrome://fontsdownloader/content/utils.js"/>
+  <script type="application/x-javascript" src="chrome://fontsdownloader/content/fontsdownloader.js"/>
+
+	<popup id="contentAreaContextMenu">
+      <menuseparator />
+	  <menuitem id="listfonts_contextmenu" label="Download multiple Web Fonts" hidden="true" />
+	  <menuitem id="thiswebfont_contextmenu" label="Download this Web Font now" />
+	</popup>
+
+	<menupopup id="menu_ToolsPopup">
+		<menuitem label="Web Font Downloader"  insertafter="menu_openAddons" oncommand='window.open("chrome://fontsdownloader/content/configure.xul", "Web Font Downloader Preferences", "chrome,width=500,height=100")'/>
+	</menupopup>
+
+  <statusbar id="status-bar">
+    <statusbarpanel class="statusbarpanel-menu-iconic" tooltiptext="Show downloadable web fonts">
+      <image id="StatusIcon" />
+
+      <menupopup id="webfonts-popup">
+      	<menuitem label="Download multiple Web Fonts" id="listfonts"  />
+        <menuseparator />
+      	<menuitem label="Single click to download a family now:" id="singleclicklabel" disabled="1" />
+      	<menuitem label="No Web Fonts seen yet!" id="nowebfonts"/>
+      	<menuseparator id="bottom_of_fonts_list"/>
+      	<menuitem label="Visit webfontdownload.org" class="link" oncommand="var win = Components.classes['@mozilla.org/appshell/window-mediator;1'].getService(Components.interfaces.nsIWindowMediator).getMostRecentWindow('navigator:browser'); win.openUILinkIn('http://webfontdownload.org', 'tab');"/>
+      </menupopup>
+    </statusbarpanel>
+  </statusbar>
+</overlay>
+
+
