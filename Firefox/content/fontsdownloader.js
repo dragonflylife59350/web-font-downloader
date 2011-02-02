@@ -41,8 +41,8 @@ function add_fontface_rule(info){
 }
 
 function FontMenuItem(info, downloader){
-	let listfonts = document.getElementById("listfonts_contextmenu");
-	listfonts.hidden = false;
+	document.getElementById("listfonts_contextmenu").hidden = false;
+	document.getElementById("singleclicklabel").hidden = false;
 
 	var nofonts = document.getElementById("nowebfonts");
 	if (nofonts)
