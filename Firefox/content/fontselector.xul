@@ -111,12 +111,7 @@ function keyDown(event){
 }
 
 function onWindowLoad(evt){
-  //auto-select first row:
-  var tree = document.getElementById("fonts_tree");
-  tree.view.selection.select(0);
-  tree.focus();
-  
-  tree.onkeydown = keyDown;
+  fout_hack();
 }
 
 function onSelect(evt){
@@ -129,6 +124,29 @@ function onSelect(evt){
     format_str==get_format_string("embedded-opentype")) ? "red" : "black";
 
   update_font_preview(family, color, tree.currentIndex+1);
+}
+
+var fout=0;
+function fout_hack(){
+  var tree = document.getElementById("fonts_tree");
+  var tbo = tree.treeBoxObject;
+  var input = $("livepreview-input")
+  input.style.color = "white";
+  var family = tree.view.getCellText(fout, tbo.columns[1]);
+  input.style.fontFamily = family+(fout+1);
+  
+  if (fout<tree.view.rowCount-1){
+    fout++;
+    window.setTimeout(fout_hack, 1);
+  } else {
+    window.setTimeout(function(){
+      //auto-select first row:
+      var tree = document.getElementById("fonts_tree");
+      tree.view.selection.select(0);
+      tree.focus();
+      tree.onkeydown = keyDown;
+    }, 1);
+  }
 }
 
 function set_preview_text_size(v){
