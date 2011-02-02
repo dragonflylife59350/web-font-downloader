@@ -29,7 +29,7 @@
   <!-- fonte box for selection -->
   <tree flex="5" id="fonts_tree" editable="true" seltype="single" onselect="onSelect(event)">
       <treecols>
-      <treecol id="selector" type="checkbox" editable="true" ignoreincolumnpicker="true"/>
+      <treecol id="selector" class="treecol-image" src='chrome://fontsdownloader/skin/webfontdownloader-16x16.png' type="checkbox" editable="true" ignoreincolumnpicker="true"/>
       <treecol id="css_name" label="CSS Name" flex="2"/>
 			<splitter class="tree-splitter"/>
       <treecol id="font_url" label="URL" flex="8"/>

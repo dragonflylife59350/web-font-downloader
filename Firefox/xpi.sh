@@ -12,8 +12,10 @@ zip web-font-downloader-svn.xpi \
 		skin/statusbarOverlay.css \
 		skin/font-icon.png \
 		skin/webfontdownloader-16x16.png \
+		skin/webfontdownloader-16x16-unchecked.png \
 		skin/webfontdownloader-32x32.png \
 		skin/webfontdownloader-16x16.svg \
+		skin/webfontdownloader-16x16-unchecked.svg \
 		skin/webfontdownloader-32x32.svg \
 		icon.png \
 		install.rdf \
