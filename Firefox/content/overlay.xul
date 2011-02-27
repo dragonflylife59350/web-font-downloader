@@ -15,7 +15,11 @@
 	</popup>
 
 	<menupopup id="menu_ToolsPopup">
-		<menuitem label="Web Font Downloader"  insertafter="menu_openAddons" oncommand='window.open("chrome://fontsdownloader/content/configure.xul", "Web Font Downloader Preferences", "chrome,width=500,height=100")'/>
+		<menuitem label="Web Font Downloader"  insertafter="menu_openAddons" id="listfonts_toolsmenu" />
+
+<!-- oncommand='window.open("chrome://fontsdownloader/content/configure.xul", "Web Font Downloader Preferences", "chrome,width=500,height=100")'
+-->
+
 	</menupopup>
 
   <statusbar id="status-bar">

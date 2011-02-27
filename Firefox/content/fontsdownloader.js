@@ -100,6 +100,7 @@ var FontsDownloader = {
 
       FontsDownloader.create_fonts_dir();
       document.getElementById("listfonts").addEventListener("click", OpenFontSelector, false);
+      document.getElementById("listfonts_toolsmenu").addEventListener("click", OpenFontSelector, false);
       document.getElementById("listfonts_contextmenu").addEventListener("click", OpenFontSelector, false);
 
 			var contextMenu = document.getElementById("contentAreaContextMenu");
