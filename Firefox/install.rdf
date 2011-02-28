@@ -4,7 +4,8 @@
 
 	<Description about="urn:mozilla:install-manifest">	
 		<em:id>fontsdownloader@fsanches.net</em:id>
-		<em:version>0.3svn</em:version>
+    <em:name>Web Font Downloader</em:name>
+		<em:version>0.3devel</em:version>
 		<em:creator>Felipe Corrêa da Silva Sanches</em:creator>
 		<em:type>2</em:type>
     <em:optionsURL>chrome://fontsdownloader/content/configure.xul</em:optionsURL>
