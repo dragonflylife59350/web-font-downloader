@@ -1,3 +1,3 @@
 all:
 	./xpi.sh
-	firefox ./web-font-downloader-svn.xpi
+	firefox ./web-font-downloader-devel.xpi
