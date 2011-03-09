@@ -1,0 +1,9 @@
+{
+  "name": "Web Font Downloader",
+  "version": "0.2.9999",
+  "description": "Installing web fonts easily!",
+  "browser_action": {
+		"popup": "popup.html",
+    "default_icon": "icon.png"
+  }
+}
