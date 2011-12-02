@@ -20,7 +20,17 @@ require("widget").Widget({
 pageMod.PageMod({
   include: "*",
   contentScriptWhen: 'end',
-  contentScriptFile: data.url("detect-webfonts.js")
+  contentScriptFile: data.url("detect-webfonts.js"),
+  onAttach: function onAttach(worker) {
+    worker.on('message', function(data) {
+      for (var i in data){
+        var ff = data[1];
+        console.log("fontfamily: " + ff["fontfamily"]);
+        console.log("src: " + ff["src"]);
+        console.log("css_path: " + ff["css_path"]);
+      }
+    });
+  }
 });
 
 exports.main = function(options, callbacks) {
@@ -28,7 +38,7 @@ exports.main = function(options, callbacks) {
  
   // Create a new context menu item.
   var menuItem = contextMenu.Item({
-    label: "What's this?",
+    label: "Download this webfont",
     // Show this item when a selection exists.
     context: contextMenu.SelectionContext(),
     // When this item is clicked, post a message back with the selection
